@@ -1,5 +1,5 @@
 site_name: TrueVAULT Blender Add-on Documentation
-site_url: https://example.com/truevault/v1.0.0/
+site_url: https://example.com/truevault/
 site_description: User documentation for the TrueVAULT Blender add-on.
 site_author: TrueVAULT
 repo_url: https://github.com/rubenmesserschmidt/trueapi-addon
@@ -9,10 +9,8 @@ copyright: "© 2025 True-VFX"
 # Version switcher stub (future versions can be added)
 extra:
   version:
-    current: v1.0.0
-    options:
-      - label: v1.0.0
-        link: /v1.0.0/
+    provider: mike
+    default: latest
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/rubenmesserschmidt/trueapi-addon
@@ -59,6 +57,7 @@ nav:
 
 theme:
   name: material
+  custom_dir: docs/overrides
   features:
     - navigation.instant
     - navigation.tracking
@@ -70,6 +69,7 @@ theme:
     - search.suggest
     - search.highlight
     - navigation.footer
+    - header.autohide
   palette:
     - scheme: default
       primary: indigo
@@ -106,6 +106,7 @@ markdown_extensions:
 plugins:
   - search
   - tags
+  - mike
 
 extra_css:
   - styles/overrides.css

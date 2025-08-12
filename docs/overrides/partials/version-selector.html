@@ -1,0 +1,17 @@
+{#
+  Custom override to ensure the version selector appears on every page.
+  Works with mike + Material for MkDocs.
+  Safe before multiple versions: hidden if only one version.
+#}
+{% if mike and mike.versions|length > 0 %}
+<div class="md-version-selector">
+  <form class="md-select" action="#" method="get">
+    <label for="__version" class="md-select__label">Version</label>
+    <select id="__version" class="md-select__inner" onchange="if (this.value) window.location.href=this.value" aria-label="Select documentation version">
+      {% for v in mike.versions %}
+        <option value="{{ v.url }}" {% if v.version == mike.alias or v.version == mike.version %}selected{% endif %}>{{ v.title }}</option>
+      {% endfor %}
+    </select>
+  </form>
+</div>
+{% endif %}
