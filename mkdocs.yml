@@ -1,0 +1,114 @@
+site_name: TrueVAULT Blender Add-on Documentation
+site_url: https://example.com/truevault/v1.0.0/
+site_description: User documentation for the TrueVAULT Blender add-on.
+site_author: TrueVAULT
+repo_url: https://github.com/rubenmesserschmidt/trueapi-addon
+repo_name: trueapi-addon
+copyright: "© 2025 True-VFX"
+
+# Version switcher stub (future versions can be added)
+extra:
+  version:
+    current: v1.0.0
+    options:
+      - label: v1.0.0
+        link: /v1.0.0/
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/rubenmesserschmidt/trueapi-addon
+  search:
+    language: en
+    separator: '[\s\-]'
+    tokenizer: '[\s\-]'
+    synonyms: docs/_data/search-synonyms.json
+
+nav:
+  - Guides:
+      - Home: index.md
+      - Quick Start: guides/quick-start.md
+      - Browse Assets: guides/browse-assets.md
+      - View Product Details: guides/view-product-details.md
+      - Buy Products: guides/buy-products.md
+      - Manage Credits: guides/manage-credits.md
+      - Import Assets: guides/import-assets.md
+      - Manage Variants & Updates: guides/manage-variants-updates.md
+      - Use Bundles: guides/use-bundles.md
+      - View Download History: guides/view-download-history.md
+      - Manage Licenses: guides/manage-licenses.md
+      - Account & Profile: guides/account-profile.md
+      - Authentication Flow: guides/auth-flow.md
+      - Refund a Purchase: guides/refund-purchase.md
+      - Use Tags & Categories: guides/tags-categories.md
+      - Offline & Caching: guides/offline-caching.md
+  - Reference:
+      - Panels & Menus: reference/panels-menus.md
+      - Operators: reference/operators.md
+      - Properties & Filters: reference/properties-filters.md
+      - Flows & States: reference/flows-states.md
+      - Task Index: reference/task-index.md
+      - Reference Index: reference/reference-index.md
+  - Troubleshooting:
+      - Common Issues: troubleshooting/common-issues.md
+      - Import Problems: troubleshooting/import-problems.md
+      - Purchase Problems: troubleshooting/purchase-problems.md
+      - Auth Problems: troubleshooting/auth-problems.md
+      - Performance & Cache: troubleshooting/performance-cache.md
+  - Glossary: glossary.md
+  - Release Notes: release-notes.md
+  - Tags: tags.md
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.tabs
+    - toc.integrate
+    - content.code.copy
+    - content.action.edit
+    - search.suggest
+    - search.highlight
+    - navigation.footer
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: purple
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+      slugify: !!python/name:markdown.extensions.toc.slugify
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.keys
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search
+  - tags
+
+extra_css:
+  - styles/overrides.css
+
+watch:
+  - docs/_data/search-synonyms.json

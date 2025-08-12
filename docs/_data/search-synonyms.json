@@ -1,0 +1,21 @@
+{
+  "purchase": ["buy", "acquire"],
+  "credits": ["balance", "points"],
+  "import": ["add asset", "place asset"],
+  "license": ["licence", "addon license"],
+  "refund": ["return", "reverse purchase"],
+  "variant": ["quality", "version"],
+  "tag": ["label", "keyword"],
+  "category": ["group", "classification"],
+  "sign in": ["login", "log in", "authenticate"],
+  "sign out": ["logout", "log out"],
+  "download history": ["downloads", "history"],
+  "update": ["refresh", "check for updates"],
+  "owned": ["purchased", "library"],
+  "asset store": ["store", "marketplace"],
+  "preferences": ["settings", "options"],
+  "balance": ["credit balance"],
+  "search": ["find", "lookup"],
+  "filter": ["narrow", "refine"],
+  "bundle": ["pack", "asset pack"]
+}
