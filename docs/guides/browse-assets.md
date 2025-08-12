@@ -14,6 +14,8 @@ feature_flags: []
 Learn how to find the assets you need quickly.
 
 ## Interface Overview
+![alt text](../assets/img/browse_assets_interface.webp){ width="40%"; align=right }
+
 - Search field (left of header) filters by title text.
 - Sort button (A/Z icon) cycles presets (Newest, Oldest, A–Z, Z–A).
 - Filters popover (funnel icon) opens advanced filters.
@@ -21,10 +23,14 @@ Learn how to find the assets you need quickly.
 - Tabs: All Assets vs Owned Assets.
 - Pagination controls at bottom (Previous, page numbers, Next).
 
+<br>
+
 ## Steps: Basic Search
+![alt text](../assets/gifs/searching_example.webp){ width="50%"; align=right }
+
 1. Focus the Search field.
-2. Type a keyword (case-insensitive).
-3. Results update after typing.
+1. Type a keyword (case-insensitive).
+2. Results update after typing.
 
 ## Steps: Use Filters
 1. Click the funnel icon.
@@ -34,6 +40,7 @@ Learn how to find the assets you need quickly.
 5. Enable Owned to show only assets you own.
 6. Close the popover; list refreshes.
 
+![alt text](../assets/gifs/categories_example.webp){ width="50%"; align=right }
 ## Steps: Navigate Categories
 1. Click the Categories triangle icon.
 2. Click a category name to drill down.
