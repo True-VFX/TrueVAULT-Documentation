@@ -68,50 +68,29 @@ You will see Sign In prompts if not authenticated.
 5. Set Name and Username when asked.
 
 
-## 4. Browse ![Searching for assets example](../assets/gifs/searching_example.webp){ width="50%"; align=right }
+## 4. Browse
 
 - Use the Search field (magnifier icon) to find assets.
+![Searching for assets example](../assets/gifs/searching_example.webp){ width="50%"; align=right }
 - Open Filters (funnel icon) for sort, price range, type, owned.
 - Open Categories (triangle icon) to drill down by category path.
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-## 5. View Details ![Viewing details of asset examples ](../assets/gifs/view_details_example.webp){ width="25%"; align=right }
+## 5. View Details
 1. Click a product title on its card.
+![Viewing details of asset examples ](../assets/gifs/view_details_example.webp){ width="25%"; align=right }
 2. Explore gallery arrows or dots to cycle images.
 3. Review Tags and License information.
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-## 6. Purchase (If Not Owned) ![Image of Unowned Product Card](../assets/img/product_card_unowned.webp){ width="25%"; align=right }
+## 6. Purchase (If Not Owned)
 1. Click Purchase.
+![Image of Unowned Product Card](../assets/img/product_card_unowned.webp){ width="25%"; align=right }
 2. Dialog shows credit price and your balance.
 3. If insufficient credits, click Recharge (opens web page) or Redeem Code.
 4. Confirm Purchase. Success message appears.
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-## 7. Import ![alt text](../assets/gifs/download_importing_example.webp){ width="50%"; align=right }
+## 7. Import
 1. Owned asset shows an Import button.
+![alt text](../assets/gifs/download_importing_example.webp){ width="50%"; align=right }
 2. Optionally click the gear icon to choose Version & Quality.
 3. Click Import.
 4. For objects: Click in the viewport to place. For textures: select objects first to auto-apply material. For heightmaps: a geometry nodes setup is created.
