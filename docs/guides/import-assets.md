@@ -14,34 +14,46 @@ feature_flags: []
 Importing downloads (if needed) then adds data to the current Blender file.
 
 ## Requirements
-- Asset owned.
-- Signed in for first download or if not cached.
-- Internet if asset not installed locally.
+- [x] Asset owned.
+- [x] Signed in for first download or if not cached.
+- [x] Internet if asset not installed locally.
 
-## Choose Version & Quality (Optional)
-1. Click the gear icon on the owned asset card.
+## Choose Version & Quality (Optional) ![alt text](../assets/img/asset_details_popup_ui.webp){ width="50%"; align="right" }
+1. Click the gear icon on the owned asset card.![Asset Card Gear Icon](../assets/img/import_asset_ui_cogs_highlight.webp){ width="50%" }
 2. Dialog lists Quality and Version.
 3. Select desired options.
 4. (Optional) Click Check for Updates.
 5. Confirm to save selection.
 
+---
+
+<video class="float-media-right" controls autoplay muted loop playsinline src="/truevault/assets/videos/asset_obj_download_and_place.mp4" title="Object asset import: download and place"></video>
 ## Import Steps (Object Assets)
 1. Click Import.
 2. If prompted sign in or fetch identifiers.
-3. Wait for any download progress bar.
-4. When prompted (modal) click in 3D View to place.
-5. Objects link into active collection.
+3. Asset will begin to download (if not cached) while you find a place to put it.
+4. Objects link into active collection.
 
+<br>
+<br>
+
+---
+
+<video class="float-media-right" controls autoplay muted loop playsinline src="/truevault/assets/videos/import_assets_material_example.mp4" title="Material asset import: download and place"></video>
 ## Import Steps (Texture Assets)
 1. Select target objects.
 2. Click Import.
 3. Material is created/updated and assigned to selected objects.
 4. Texture nodes filled where files exist; missing maps muted.
+!!! Info
+    Materials do not overwrite existing ones. It inserts it in new slots at the bottom
 
+---
+
+<video class="float-media-right" controls autoplay muted loop playsinline src="/truevault/assets/videos/import_assets_heightmaps_example.mp4" title="Heightmap asset import: download and place"></video>
 ## Import Steps (Heightmap Assets)
 1. Click Import.
-2. Geometry Nodes object is created with displacement setup.
-3. Heightmap image loaded and sockets assigned.
+2. Once downloaded (if needed) a plane with a displacement setup is created for easy editing.
 
 ## Progress & Cancellation
 - Progress bar shows during download.

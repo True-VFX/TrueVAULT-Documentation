@@ -65,3 +65,19 @@
 [data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
   border-color: var(--md-default-fg-color--lightest);
 }
+
+/* Responsive right-floating media used by guides (video/images) */
+.float-media-right {
+  width: 50%;
+  float: right;
+  margin: 0 0 1rem 1rem;
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .float-media-right {
+    width: 100%;
+    float: none;
+    margin: 0 0 1rem 0;
+  }
+}
