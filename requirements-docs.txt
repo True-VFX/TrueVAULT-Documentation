@@ -6,3 +6,10 @@ pymdown-extensions==10.8
 # Tags plugin is built into Material; extra plugins can be added below
 # Versioned documentation deployment (mike)
 mike==2.1.3
+
+# Additional plugins referenced in mkdocs.yml
+# Note: 'tags' is provided by mkdocs-material (no separate package required).
+# The following package names are inferred from common PyPI plugin names; verify and pin versions for reproducibility.
+mkdocs-glightbox
+mkdocs-minify-plugin
+mkdocs-macros-plugin
