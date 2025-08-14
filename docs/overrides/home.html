@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="md-typeset">
+    <!-- Hero Section -->
+    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 4rem 2rem; text-align: center; margin: -2rem -2rem 3rem -2rem; border-radius: 8px;">
+        <h1 style="color: white; font-size: 3rem; margin-bottom: 1rem; font-family: 'Ubuntu', sans-serif;">
+            {{ config.site_name }}
+        </h1>
+        <p style="font-size: 1.25rem; margin-bottom: 2rem; opacity: 0.9;">
+            {{ config.site_description }}
+        </p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="{{ 'guides/quick-start/' | url }}" class="md-button md-button--primary" style="background: white; color: #667eea; font-weight: 500; text-decoration: none; padding: 12px 24px; border-radius: 4px; display: inline-flex; align-items: center; gap: 8px;">
+                🚀 Get Started
+            </a>
+            <a href="{{ 'guides/' | url }}" class="md-button" style="border: 2px solid white; color: white; background: transparent; text-decoration: none; padding: 10px 22px; border-radius: 4px; display: inline-flex; align-items: center; gap: 8px;">
+                📖 Browse Guides
+            </a>
+        </div>
+    </div>
+
+    <!-- Feature Cards Grid -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
+        
+        <div class="md-typeset" style="border: 1px solid var(--md-default-fg-color--lightest); border-radius: 8px; padding: 1.5rem; background: var(--md-default-bg-color);">
+            <h3 style="margin-top: 0; display: flex; align-items: center; gap: 8px;">
+                ⚡ Quick Start
+            </h3>
+            <hr style="margin: 1rem 0;">
+            <p>Get up and running with TrueVAULT in minutes. Install the add-on and start browsing assets immediately.</p>
+            <a href="{{ 'guides/quick-start/' | url }}" style="color: var(--md-primary-fg-color); text-decoration: none; font-weight: 500;">
+                → Get Started
+            </a>
+        </div>
+
+        <div class="md-typeset" style="border: 1px solid var(--md-default-fg-color--lightest); border-radius: 8px; padding: 1.5rem; background: var(--md-default-bg-color);">
+            <h3 style="margin-top: 0; display: flex; align-items: center; gap: 8px;">
+                🔍 Browse Assets
+            </h3>
+            <hr style="margin: 1rem 0;">
+            <p>Discover thousands of high-quality assets with powerful filtering and search capabilities.</p>
+            <a href="{{ 'guides/browse-assets/' | url }}" style="color: var(--md-primary-fg-color); text-decoration: none; font-weight: 500;">
+                → Browse Assets
+            </a>
+        </div>
+
+        <div class="md-typeset" style="border: 1px solid var(--md-default-fg-color--lightest); border-radius: 8px; padding: 1.5rem; background: var(--md-default-bg-color);">
+            <h3 style="margin-top: 0; display: flex; align-items: center; gap: 8px;">
+                💾 Import & Manage
+            </h3>
+            <hr style="margin: 1rem 0;">
+            <p>Import assets directly into Blender and manage versions, updates, and variants effortlessly.</p>
+            <a href="{{ 'guides/import-assets/' | url }}" style="color: var(--md-primary-fg-color); text-decoration: none; font-weight: 500;">
+                → Import Guide
+            </a>
+        </div>
+
+        <div class="md-typeset" style="border: 1px solid var(--md-default-fg-color--lightest); border-radius: 8px; padding: 1.5rem; background: var(--md-default-bg-color);">
+            <h3 style="margin-top: 0; display: flex; align-items: center; gap: 8px;">
+                💳 Purchase & Credits
+            </h3>
+            <hr style="margin: 1rem 0;">
+            <p>Buy assets with credits, manage your purchases, and handle licensing seamlessly.</p>
+            <a href="{{ 'guides/buy-products/' | url }}" style="color: var(--md-primary-fg-color); text-decoration: none; font-weight: 500;">
+                → Buy Products
+            </a>
+        </div>
+
+        <div class="md-typeset" style="border: 1px solid var(--md-default-fg-color--lightest); border-radius: 8px; padding: 1.5rem; background: var(--md-default-bg-color);">
+            <h3 style="margin-top: 0; display: flex; align-items: center; gap: 8px;">
+                ⚙️ Reference
+            </h3>
+            <hr style="margin: 1rem 0;">
+            <p>Complete reference for all panels, operators, properties, and technical details.</p>
+            <a href="{{ 'reference/' | url }}" style="color: var(--md-primary-fg-color); text-decoration: none; font-weight: 500;">
+                → Reference
+            </a>
+        </div>
+
+        <div class="md-typeset" style="border: 1px solid var(--md-default-fg-color--lightest); border-radius: 8px; padding: 1.5rem; background: var(--md-default-bg-color);">
+            <h3 style="margin-top: 0; display: flex; align-items: center; gap: 8px;">
+                ❓ Troubleshooting
+            </h3>
+            <hr style="margin: 1rem 0;">
+            <p>Solve common issues and get help with performance, authentication, and import problems.</p>
+            <a href="{{ 'troubleshooting/' | url }}" style="color: var(--md-primary-fg-color); text-decoration: none; font-weight: 500;">
+                → Get Help
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Quick Actions Section -->
+    <div style="background: var(--md-default-bg-color--light); padding: 2rem; border-radius: 8px; margin-top: 3rem;">
+        <h2 style="display: flex; align-items: center; gap: 8px;">✨ Quick Actions</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+            <div>
+                <h3 style="display: flex; align-items: center; gap: 8px;">👤 Account Setup</h3>
+                <p>Configure your profile and authentication</p>
+                <a href="{{ 'guides/account-profile/' | url }}" style="color: var(--md-primary-fg-color); text-decoration: none; font-weight: 500;">→ Account Guide</a>
+            </div>
+            <div>
+                <h3 style="display: flex; align-items: center; gap: 8px;">🏷️ Tags & Categories</h3>
+                <p>Learn to use filtering and organization</p>
+                <a href="{{ 'guides/tags-categories/' | url }}" style="color: var(--md-primary-fg-color); text-decoration: none; font-weight: 500;">→ Organization Guide</a>
+            </div>
+            <div>
+                <h3 style="display: flex; align-items: center; gap: 8px;">💾 Offline Mode</h3>
+                <p>Set up caching for offline workflows</p>
+                <a href="{{ 'guides/offline-caching/' | url }}" style="color: var(--md-primary-fg-color); text-decoration: none; font-weight: 500;">→ Caching Guide</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

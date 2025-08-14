@@ -1,3 +1,19 @@
+/* Font Configuration - Ubuntu for headings, Open Sans for body */
+:root { 
+  --md-text-font: "Open Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; 
+}
+
+.md-typeset { 
+  font-family: var(--md-text-font); 
+}
+
+/* Headings, header tabs, sidebar titles */
+.md-typeset h1,.md-typeset h2,.md-typeset h3,.md-typeset h4,.md-typeset h5,.md-typeset h6,
+.md-header__title, .md-tabs__link, .md-nav__title {
+  font-family: "Ubuntu", var(--md-text-font);
+  letter-spacing: -0.01em;
+}
+
 /* Minimal placeholder for future style overrides.
  * Add custom palette tweaks, callout stylings, or layout adjustments here.
  */

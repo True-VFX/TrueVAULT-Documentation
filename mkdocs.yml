@@ -21,8 +21,9 @@ extra:
     synonyms: docs/_data/search-synonyms.json
 
 nav:
+  - Home: index.md
   - Guides:
-      - Home: index.md
+      - guides/index.md
       - Quick Start: guides/quick-start.md
       - Browse Assets: guides/browse-assets.md
       - View Product Details: guides/view-product-details.md
@@ -39,6 +40,7 @@ nav:
       - Use Tags & Categories: guides/tags-categories.md
       - Offline & Caching: guides/offline-caching.md
   - Reference:
+      - reference/index.md
       - Panels & Menus: reference/panels-menus.md
       - Operators: reference/operators.md
       - Properties & Filters: reference/properties-filters.md
@@ -46,6 +48,7 @@ nav:
       - Task Index: reference/task-index.md
       - Reference Index: reference/reference-index.md
   - Troubleshooting:
+      - troubleshooting/index.md
       - Common Issues: troubleshooting/common-issues.md
       - Import Problems: troubleshooting/import-problems.md
       - Purchase Problems: troubleshooting/purchase-problems.md
@@ -59,12 +62,15 @@ theme:
   name: material
   custom_dir: docs/overrides
   features:
-    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes      # click top-level sections to open their index page
+    - navigation.instant      # SPA-like instant loading
     - navigation.tracking
     - navigation.top
-    - navigation.tabs
     - toc.integrate
     - content.code.copy
+    - content.tabs.link
     - content.action.edit
     - search.suggest
     - search.highlight
@@ -74,6 +80,8 @@ theme:
     - scheme: default
       primary: indigo
       accent: purple
+  font:
+    text: "Open Sans"  # body; headings overridden via CSS
   icon:
     repo: fontawesome/brands/github
 
@@ -108,10 +116,14 @@ markdown_extensions:
 
 plugins:
   - search
+  - glightbox
+  - minify
+  - macros
   - tags
   - mike
 
 extra_css:
+  - stylesheets/fonts.css
   - styles/overrides.css
 
 watch:

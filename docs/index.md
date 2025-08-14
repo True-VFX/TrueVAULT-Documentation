@@ -1,5 +1,6 @@
 ---
 title: TrueVAULT Add-on
+template: home.html
 summary: Discover, purchase, and import high-quality assets directly inside Blender.
 tags: [overview, quick start]
 keywords: [TrueVAULT, asset store, blender assets, import]
