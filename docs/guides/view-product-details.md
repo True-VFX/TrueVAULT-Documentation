@@ -13,6 +13,7 @@ feature_flags: []
 
 Use the details page to inspect images, description, tags, and license before buying.
 
+![alt text](../assets/gifs/view_details_example.webp){ width="50%"; align=right }
 ## Open Details
 1. In the asset grid click the product title.
 2. The panel switches to the details layout.
