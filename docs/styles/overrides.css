@@ -29,5 +29,39 @@
 /* Version selector styling (custom partial) */
 .md-version-selector { display:flex; align-items:center; margin-left:1rem; }
 .md-header__inner .md-version-selector { margin-left: auto; }
-.md-version-selector select { background: var(--md-default-bg-color); color: var(--md-default-fg-color); border:1px solid var(--md-typeset-table-border-color, #ccc); border-radius:4px; padding:2px 6px; }
-.md-version-selector label { margin-right:0.5rem; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.05em; }
+.md-version-selector select { 
+  background: var(--md-default-bg-color); 
+  color: var(--md-default-fg-color); 
+  border: 1px solid var(--md-typeset-table-border-color, #ccc); 
+  border-radius: 4px; 
+  padding: 2px 6px; 
+}
+.md-version-selector label { 
+  margin-right: 0.5rem; 
+  font-size: 0.75rem; 
+  text-transform: uppercase; 
+  letter-spacing: 0.05em; 
+  color: var(--md-default-fg-color);
+}
+
+/* Dark mode specific adjustments */
+[data-md-color-scheme="slate"] {
+  /* Ensure custom elements adapt to dark mode */
+  --md-text-color: #e1e1e1;
+  --md-typeset-color: #e1e1e1;
+}
+
+[data-md-color-scheme="slate"] .md-version-selector select {
+  background: var(--md-default-bg-color--light);
+  border-color: var(--md-default-fg-color--lighter);
+}
+
+/* Ensure code blocks and tables look good in dark mode */
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) {
+  border-color: var(--md-default-fg-color--lightest);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) td,
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  border-color: var(--md-default-fg-color--lightest);
+}
