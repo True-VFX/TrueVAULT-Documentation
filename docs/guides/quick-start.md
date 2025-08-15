@@ -23,6 +23,53 @@ Get productive in under 5 minutes.
 
 ---
 
+## At a Glance
+<div class="grid cards" markdown>
+
+-   :material-download:{ .lg .middle } __Install__
+
+    ---
+
+    Drag & drop or manual ZIP install.  
+    [:octicons-arrow-right-24: Steps](#1-install-the-add-on)
+
+-   :material-view-dashboard-outline:{ .lg .middle } __Open Panel__
+
+    ---
+
+    Sidebar <kbd>N</kbd> → TrueVAULT tab.  
+    [:octicons-arrow-right-24: Panel](#2-open-the-panel)
+
+-   :material-account-key:{ .lg .middle } __Sign In__
+
+    ---
+
+    Authenticate / verify email / MFA.  
+    [:octicons-arrow-right-24: Auth](#3-sign-in--create-account)
+
+-   :material-database-search:{ .lg .middle } __Browse & Details__
+
+    ---
+
+    Search, filter, open product pages.  
+    [:octicons-arrow-right-24: Browse](#4-browse)
+
+-   :material-cart:{ .lg .middle } __Purchase__
+
+    ---
+
+    Use credits or redeem code.  
+    [:octicons-arrow-right-24: Purchase](#6-purchase-if-not-owned)
+
+-   :material-import:{ .lg .middle } __Import & Verify__
+
+    ---
+
+    Download, place, confirm result.  
+    [:octicons-arrow-right-24: Import](#7-import)
+
+</div>
+
 ## 1. Install the Add-on
 
 Choose a method below.
@@ -124,7 +171,7 @@ You will see Sign In prompts if not authenticated.
 
 ---
 
-## Troubleshooting Quick Fixes
+## Troubleshooting {: #troubleshooting }
 
 ??? question "Can't see the TrueVAULT tab?"
     * Ensure the add-on is enabled in Preferences.  

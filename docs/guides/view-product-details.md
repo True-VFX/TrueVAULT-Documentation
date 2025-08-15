@@ -129,7 +129,7 @@ Use this page when you need deeper context than the product card offers.
       - Use global navigation (Guides → Browse Assets).  
       - Press <kbd>Esc</kbd> if mapped to exit details (implementation dependent).
 
-## Troubleshooting
+## Troubleshooting {: #troubleshooting }
 ??? question "Why are there no images?"
       The product may not have media yet or your connection failed mid-load. Try refreshing the panel or verifying connectivity.
 

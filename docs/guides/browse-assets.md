@@ -129,7 +129,7 @@ Find assets fast using search, filters, categories, sorting, and pagination.
 !!! info "Accessibility"
     All interactive controls expose textual labels or tooltips. Ensure high‑contrast theme selection if readability is reduced (palette toggle in header).
 
-## See Also
+## Next Steps
 
 <div class="grid cards" markdown>
 
@@ -148,4 +148,14 @@ Find assets fast using search, filters, categories, sorting, and pagination.
 </div>
 
 ??? note "Assumptions"
-		Sort icon sequencing inferred from internal enum ordering.
+    Sort icon sequencing inferred from internal enum ordering.
+
+## Troubleshooting {: #troubleshooting }
+??? question "No results after filtering"
+    Clear one dimension at a time (Owned toggle, then subtype, then price) to isolate the filter excluding everything.
+
+??? question "Pagination jump feels slow"
+    Large thumbnails or slow network can delay render; reduce page size or disable heavy previews in browser settings.
+
+??? tip "Keyboard focus lost after search"
+    Press <kbd>Tab</kbd> once to return focus to result grid for arrow navigation.

@@ -96,7 +96,7 @@ Mark items as you progress.
 3. Check your updated credit balance in the header or balance panel.  
 4. Optionally open **View Download History** to confirm the entry was logged.
 
-## Troubleshooting
+## Troubleshooting {: #troubleshooting }
 
 ??? failure "Purchase fails or seems stuck"
     - Ensure you are still signed in (session may have expired).  
