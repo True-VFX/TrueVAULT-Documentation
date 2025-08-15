@@ -3,3 +3,6 @@ site/*
 archived_sites/*
 .venv/*
 Redesign_PRD.md
+.playwright-mcp/browse-assets-updated.png
+.playwright-mcp/import-assets-final.png
+.playwright-mcp/import-assets-snippet.png
