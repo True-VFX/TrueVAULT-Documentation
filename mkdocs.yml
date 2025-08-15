@@ -1,9 +1,9 @@
 site_name: TrueVAULT Blender Add-on Documentation
 site_url: https://example.com/truevault/
 site_description: User documentation for the TrueVAULT Blender add-on.
-site_author: TrueVAULT
-repo_url: https://github.com/rubenmesserschmidt/trueapi-addon
-repo_name: trueapi-addon
+site_author: TrueVFX
+repo_url: https://github.com/True-VFX/true_vault
+repo_name: TrueVAULT
 copyright: "© 2025 True-VFX"
 
 # Version switcher stub (future versions can be added)
@@ -13,7 +13,7 @@ extra:
     default: latest
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/rubenmesserschmidt/trueapi-addon
+      link: https://github.com/test/true_vault
   search:
     language: en
     separator: '[\s\-]'
