@@ -4,7 +4,7 @@ Welcome to the TrueVAULT guides! These step-by-step tutorials will help you mast
 
 <div class="grid cards" markdown>
 
--   :material-rocket: **Quick Start**
+-   :material-rocket-launch: **Quick Start**
 
     ---
 
@@ -20,7 +20,7 @@ Welcome to the TrueVAULT guides! These step-by-step tutorials will help you mast
 
     [:octicons-arrow-right-16: Browse Guide](browse-assets.md)
 
--   :material-eye: **View Product Details**
+-   :material-image-search: **View Product Details**
 
     ---
 
@@ -28,7 +28,7 @@ Welcome to the TrueVAULT guides! These step-by-step tutorials will help you mast
 
     [:octicons-arrow-right-16: View Details](view-product-details.md)
 
--   :material-credit-card: **Buy Products**
+-   :material-cart: **Buy Products**
 
     ---
 
@@ -44,7 +44,7 @@ Welcome to the TrueVAULT guides! These step-by-step tutorials will help you mast
 
     [:octicons-arrow-right-16: Import Guide](import-assets.md)
 
--   :material-update: **Manage Variants & Updates**
+-   :material-layers-triple: **Manage Variants & Updates**
 
     ---
 
@@ -84,7 +84,7 @@ Welcome to the TrueVAULT guides! These step-by-step tutorials will help you mast
 
     [:octicons-arrow-right-16: Account Setup](account-profile.md)
 
--   :material-login: **Authentication Flow**
+-   :material-key: **Authentication Flow**
 
     ---
 

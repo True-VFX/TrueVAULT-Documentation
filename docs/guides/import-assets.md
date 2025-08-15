@@ -4,7 +4,7 @@ summary: Bring owned assets into your scene.
 tags: [import, assets]
 keywords: [import, placement, texture, heightmap]
 related: [manage-variants-updates, view-download-history]
-icon: material/file-download
+icon: material/download
 last_updated: 2025-08-14
 blender_version_target: 4.5+
 feature_flags: []

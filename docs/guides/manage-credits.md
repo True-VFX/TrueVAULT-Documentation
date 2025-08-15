@@ -4,7 +4,7 @@ summary: View balance, get more credits, and redeem codes.
 tags: [credits, purchase]
 keywords: [credits, balance, recharge, redeem]
 related: [buy-products, refund-purchase]
-icon: material/credit-card
+icon: material/currency-usd
 last_updated: 2025-08-15
 blender_version_target: 4.5+
 feature_flags: []

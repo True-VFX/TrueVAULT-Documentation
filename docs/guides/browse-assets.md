@@ -1,7 +1,7 @@
 ---
 title: Browse Assets
 summary: Search, filter, and navigate pages of assets.
-icon: material/database-search
+icon: material/magnify
 tags: [browse, search, filter]
 keywords: [browse, search, filter, pagination]
 related: [quick-start, view-product-details, tags-categories]
