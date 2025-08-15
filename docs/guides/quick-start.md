@@ -4,6 +4,7 @@ summary: Install, sign in, browse, purchase, and import your first asset.
 tags: [quick start, onboarding]
 keywords: [install, sign in, first asset]
 related: [../index.md, browse-assets, buy-products, import-assets]
+icon: material/rocket-launch
 last_updated: 2025-08-12
 blender_version_target: 4.0+
 feature_flags: []
@@ -11,57 +12,74 @@ feature_flags: []
 
 # Quick Start
 
-Follow these steps to get productive fast.
+Get productive in under 5 minutes.
+
+!!! tip "TL;DR – Fast Path"
+    1. Drag the install button into Blender.  
+    2. Open the panel (<kbd>N</kbd> key) → `TrueVAULT` tab.  
+    3. Sign in / create account.  
+    4. Search, purchase (if needed), Import.  
+    5. Done – asset appears in your scene / materials list.
+
+---
 
 ## 1. Install the Add-on
-<div class="truevault-install-action" data-install-url="https://antnxpyjvpvklwhdwhmq.supabase.co/true_vault.zip?repository=%2Ffunctions%2Fv1%2Fget-repo&blender_version_min=4.5.0" data-platform="" download="truevault-addon-latest.zip">
-  <div class="truevault-drag-group">
-    <button class="truevault-drag-button" draggable="true" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; background: #007bff; color: white; border: none; border-radius: 6px; cursor: move; font-weight: 500; text-decoration: none; margin-bottom: 12px;" ondragstart="handleDragStart(event)">
-    <span>Drag and Drop into Blender</span>
-    </button>
-  </div>
-</div>
+
+Choose a method below.
+
+=== "Drag & Drop (Recommended)"
+
+       <div class="truevault-install-action" data-install-url="https://antnxpyjvpvklwhdwhmq.supabase.co/true_vault.zip?repository=%2Ffunctions%2Fv1%2Fget-repo&blender_version_min=4.5.0" data-platform="" download="truevault-addon-latest.zip">
+           <div class="truevault-drag-group">
+               <a class="md-button md-button--primary truevault-drag-button" draggable="true" ondragstart="handleDragStart(event)">
+                   :material-download: Drag & Drop into Blender
+               </a>
+           </div>
+       </div>
+
+       1. Drag the blue button into the Blender window.  
+       2. Accept the install prompt if shown.  
+       3. (Optional) Set a custom Library Path: `Edit > Preferences > Add-ons > TrueVAULT`.
+
+=== "Manual (Zip File)"
+
+       1. Click the link to download: [Download latest add-on ZIP](https://github.com/True-VFX/true_vault/releases/tag/v1.0.0){ .md-button }  
+       2. Blender: `Edit > Preferences > Add-ons > Install...`  
+       3. Select the downloaded `true_vault.zip`.  
+       4. Enable the checkbox.  
+       5. (Optional) Adjust Library Path.
+
+=== "Updating"
+
+       * Re‑download the ZIP, re-install (Blender will overwrite).  
+       * Or remove then re-add if issues occur.  
+       * Existing local cached assets remain unless you clear them.
 
 <script>
-    function handleDragStart(event) {
-        // Get the install URL from the parent container
+function handleDragStart(event) {
     const container = event.target.closest('.truevault-install-action');
     const installUrl = container.getAttribute('data-install-url');
-    
-    // Set the drag data - this is what Blender will receive
     event.dataTransfer.setData('text/uri-list', installUrl);
     event.dataTransfer.setData('text/plain', installUrl);
-    
-    // Set drag effect
     event.dataTransfer.effectAllowed = 'copy';
-    
-    // Optional: Add visual feedback during drag
-    event.target.style.opacity = '0.5';
+    event.target.classList.add('dragging');
 }
-
-// Add dragend event to restore visual state
-document.addEventListener('DOMContentLoaded', function() {
-    const dragButton = document.querySelector('.truevault-drag-button');
-    if (dragButton) {
-        dragButton.addEventListener('dragend', function(event) {
-            event.target.style.opacity = '1';
-        });
-    }
+document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.querySelector('.truevault-drag-button');
+    if (btn) btn.addEventListener('dragend', e => e.target.classList.remove('dragging'));
 });
 </script>
 
-1. Drag the above installation url into Blender.
-2. Follow prompts from Blender regarding the library.
-3. (Optional) Set a custom Library Path under Preferences > Add-ons > TrueVAULT.
+---
 
 ## 2. Open the Panel
-1. In a 3D View press `N` to open the Sidebar.
-2. Click the TrueVAULT tab.
+1. In a 3D View press <kbd>N</kbd> to open the Sidebar.
+2. Click the `TrueVAULT` tab.
 
-## 3. Sign In / Create Account ![Authentication UI displaying Sign In and Sign Up options](../assets/img/auth_ui.webp){ width="50%"; align=right }
+## 3. Sign In / Create Account ![Authentication UI displaying Sign In and Sign Up options](../assets/img/auth_ui.webp){ width="50%" align=right }
 You will see Sign In prompts if not authenticated.
 
-1. Click Sign In.
+1. Click `Sign In`.
 2. Enter email and password.
 3. Complete email verification (check inbox) if prompted.
 4. If Multi-Factor Auth required, follow on-screen steps (Add Phone, Verify Code).
@@ -70,42 +88,78 @@ You will see Sign In prompts if not authenticated.
 
 ## 4. Browse
 
-- Use the Search field (magnifier icon) to find assets.
-![Searching for assets example](../assets/gifs/searching_example.webp){ width="50%"; align=right }
-- Open Filters (funnel icon) for sort, price range, type, owned.
-- Open Categories (triangle icon) to drill down by category path.
+- Use the Search field (:octicons-search-16:) to find assets.
+![Searching for assets example](../assets/gifs/searching_example.webp){ width="50%" align=right }
+- Open Filters (:material-filter:) for sort, price range, type, owned.
+- Open Categories (:material-triangle-down:) to drill down by category path.
 
 ## 5. View Details
 1. Click a product title on its card.
-![Viewing details of asset examples ](../assets/gifs/view_details_example.webp){ width="25%"; align=right }
-2. Explore gallery arrows or dots to cycle images.
+![Viewing details of asset examples ](../assets/gifs/view_details_example.webp){ width="25%" align=right }
+2. Explore gallery arrows :octicons-triangle-left-24: / :octicons-triangle-right-24: or dots :octicons-dot-fill-24: to cycle images.
 3. Review Tags and License information.
 
 ## 6. Purchase (If Not Owned)
 1. Click Purchase.
-![Image of Unowned Product Card](../assets/img/product_card_unowned.webp){ width="25%"; align=right }
+![Image of Unowned Product Card](../assets/img/product_card_unowned.webp){ width="25%" align=right }
 2. Dialog shows credit price and your balance.
 3. If insufficient credits, click Recharge (opens web page) or Redeem Code.
 4. Confirm Purchase. Success message appears.
 
 ## 7. Import
 1. Owned asset shows an Import button.
-![alt text](../assets/gifs/download_importing_example.webp){ width="50%"; align=right }
-2. Optionally click the gear icon to choose Version & Quality.
+![Importing and download progress example](../assets/gifs/download_importing_example.webp){ width="50%" align=right }
+2. Optionally click the gear icon to choose Version & Quality :fontawesome-solid-gears:.
 3. Click Import.
-4. For objects: Click in the viewport to place. For textures: select objects first to auto-apply material. For heightmaps: a geometry nodes setup is created.
-5. Wait for download progress (you can Cancel).
+4. Placement:
+      - **Objects**: Click in the viewport to place.
+      - **Textures**: select objects first to auto-apply material.
+      - **Heightmaps**: a geometry nodes setup is created.
+5. Wait for download progress (press <kbd>ESC</kbd> to Cancel).
 
 ## 8. Verify
 - Imported objects appear in the active collection.
 - Materials appear in the Material list if texture asset.
 - Heightmap object with Geometry Nodes modifier if heightmap asset.
 
-## See Also
-- [Browse Assets](browse-assets.md)
-- [Buy Products](buy-products.md)
-- [Import Assets](import-assets.md)
-- [Manage Credits](manage-credits.md)
+---
 
-## Assumptions
-Some setup steps inferred due to missing explicit installer text.
+## Troubleshooting Quick Fixes
+
+??? question "Can't see the TrueVAULT tab?"
+    * Ensure the add-on is enabled in Preferences.  
+    * Try toggling it off/on.  
+    * Check Console for errors (`Window > Toggle System Console`).
+
+??? question "Drag & Drop install not working?"
+    * Use the Manual (Zip File) tab above.  
+    * Verify Blender version ≥ target: **{{ page.meta.blender_version_target }}**.
+
+??? question "Import stalled at 0%?"
+    * Check internet connection / firewall.  
+    * Re‑sign in if token expired (look for auth prompt).  
+    * Use smaller quality variant via gear icon :fontawesome-solid-gears:.
+
+---
+
+## Next Steps
+
+<div class="grid cards" markdown>
+
+- :material-magnify: __Browse Assets__  
+    Learn powerful filtering & categories.  
+    [:octicons-arrow-right-24: Browse](browse-assets.md)
+
+- :material-cart: __Purchase Flow__  
+    Credits, recharging & redeem codes.  
+    [:octicons-arrow-right-24: Buy](buy-products.md)
+
+- :material-download: __Import Options__  
+    Variants, qualities & placement tips.  
+    [:octicons-arrow-right-24: Import](import-assets.md)
+
+- :material-cash: __Manage Credits__  
+    Track balance & spending.  
+    [:octicons-arrow-right-24: Credits](manage-credits.md)
+
+</div>

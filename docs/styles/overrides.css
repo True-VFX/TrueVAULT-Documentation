@@ -66,12 +66,22 @@
   border-color: var(--md-default-fg-color--lightest);
 }
 
+code {
+  white-space : pre-wrap !important;
+  word-break: break-word;
+}
+
 /* Responsive right-floating media used by guides (video/images) */
 .float-media-right {
   width: 50%;
   float: right;
   margin: 0 0 1rem 1rem;
   display: block;
+}
+
+/* Icon Styles */
+.toggle_green {
+  color: #00e676;
 }
 
 @media (max-width: 800px) {
