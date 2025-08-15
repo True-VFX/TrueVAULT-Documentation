@@ -4,6 +4,7 @@ summary: Review past downloads for an asset.
 tags: [downloads, history]
 keywords: [download history]
 related: [import-assets, manage-variants-updates]
+icon: material/history
 last_updated: 2025-08-12
 blender_version_target: 4.0+
 feature_flags: []
@@ -13,9 +14,9 @@ feature_flags: []
 
 Check versions and qualities you have downloaded.
 
-## From Asset Details
-1. Owned asset: locate Download History button (clock/refresh icon context) or menu (Assumption).
-2. Click View Download History.
+## From Asset Details ![Location of Download History](../assets/img/download_history_menu_location.webp){ align="right"; width=50% }
+1. Owned asset: locate menu button (:material-triangle-down:).
+2. Click `Download History`.
 3. Panel switches to history view.
 
 ## History Entries
@@ -29,6 +30,3 @@ Check versions and qualities you have downloaded.
 ## See Also
 - [Import Assets](import-assets.md)
 - [Manage Variants & Updates](manage-variants-updates.md)
-
-## Assumptions
-Exact icon and placement inferred.

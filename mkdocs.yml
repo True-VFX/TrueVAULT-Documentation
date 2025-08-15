@@ -47,6 +47,7 @@ nav:
       - Flows & States: reference/flows-states.md
       - Task Index: reference/task-index.md
       - Reference Index: reference/reference-index.md
+  - Refund Policy: reference/refund-policy.md
   - Troubleshooting:
       - troubleshooting/index.md
       - Common Issues: troubleshooting/common-issues.md
@@ -100,6 +101,9 @@ theme:
 
 markdown_extensions:
   - admonition
+  - pymdownx.arithmatex:
+      generic: true       # output neutral wrappers for MathJax processing
+      inline_syntax: ['dollar', 'round']
   - toc:
       permalink: true
       slugify: !!python/name:markdown.extensions.toc.slugify
@@ -139,6 +143,10 @@ plugins:
 extra_css:
   - stylesheets/fonts.css
   - styles/overrides.css
+
+extra_javascript:
+  - javascripts/mathjax.js   # MathJax configuration (must come before loader)
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 watch:
   - docs/_data/search-synonyms.json

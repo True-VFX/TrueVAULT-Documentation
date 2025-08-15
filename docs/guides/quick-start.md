@@ -15,11 +15,12 @@ feature_flags: []
 Get productive in under 5 minutes.
 
 !!! tip "TL;DR – Fast Path"
-    1. Drag the install button into Blender.  
-    2. Open the panel (<kbd>N</kbd> key) → `TrueVAULT` tab.  
-    3. Sign in / create account.  
-    4. Search, purchase (if needed), Import.  
-    5. Done – asset appears in your scene / materials list.
+    1. Drag the install button into Blender.
+    2. Install in `Edit > Preferences > Get Extensions`.
+    3. Open the panel (<kbd>N</kbd> key) → `TrueVAULT` tab.  
+    4. Sign in / create account.  
+    5. Search, purchase (if needed), Import.  
+    6. Done – asset appears in your scene / materials list.
 
 ---
 
