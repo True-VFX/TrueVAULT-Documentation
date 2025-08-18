@@ -16,9 +16,36 @@ Request a refund for qualifying purchases.
 
 > **Need the detailed rules?** See the full [Refund Policy](../reference/refund-policy.md) for eligibility, download thresholds, and calculation examples.
 
+## At a Glance
+<div class="grid cards" markdown>
+
+- :material-history:{ .lg .middle } __Find Purchase__  
+  Locate in history.  
+  [:octicons-arrow-right-24: Step](#steps)
+
+- :material-menu:{ .lg .middle } __Open Menu__  
+  Access action list.  
+  [:octicons-arrow-right-24: Menu](#steps)
+
+- :material-cash-refund:{ .lg .middle } __Refund Action__  
+  Initiate request.  
+  [:octicons-arrow-right-24: Action](#steps)
+
+- :material-progress-check:{ .lg .middle } __Result__  
+  Credits adjusted.  
+  [:octicons-arrow-right-24: Result](#result)
+
+- :material-shield-alert:{ .lg .middle } __Policy Rules__  
+  Limits & thresholds.  
+  [:octicons-arrow-right-24: Policy](../reference/refund-policy.md)
+
+</div>
+
 ## Requirements
-- Purchase status is Completed.
-- Within allowed refund policy window (30 days).
+- [ ] Purchase status is `Completed`.
+- [ ] Inside 30‑day refund window.
+- [ ] Download count below policy threshold (see policy).
+- [ ] No prior refund for same asset (if restricted).
 
 ## Steps ![Location of Refund Product](../assets/img/purchase_history_menu_location.webp){ width=50%; align=right }
 1. Open `Purchase History` (Menu :material-menu: > Purchase History).
@@ -31,9 +58,34 @@ Request a refund for qualifying purchases.
 - Credits returned or adjusted (depends on server response).
 - Product ownership may revoke if applicable.
 
+## Troubleshooting {: #troubleshooting }
+??? question "Refund option missing?"
+    * Purchase outside allowed window.  
+    * Already refunded previously.  
+    * Download threshold exceeded.
 
-## See Also
-- [Buy Products](buy-products.md)
-- [Manage Credits](manage-credits.md)
-- [Refund Policy](/docs/reference/refund-policy/)
-- [Refund Policy](../reference/refund-policy.md)
+??? question "Credits not updated?"
+    * Wait for server sync (few seconds).  
+    * Refresh purchase history.  
+    * Check network connection.
+
+??? question "Accidental refund?"
+    * Re-purchase asset (credits permitting).  
+    * Contact support for edge reversals (policy dependent).
+
+## Next Steps
+<div class="grid cards" markdown>
+
+- :material-cart: __Buy Products__  
+  Purchase new assets.  
+  [:octicons-arrow-right-24: Buy](buy-products.md)
+
+- :material-cash: __Manage Credits__  
+  Track balance changes.  
+  [:octicons-arrow-right-24: Credits](manage-credits.md)
+
+- :material-shield-alert: __Refund Policy__  
+  Full rules & limits.  
+  [:octicons-arrow-right-24: Policy](../reference/refund-policy.md)
+
+</div>

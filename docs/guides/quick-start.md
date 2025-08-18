@@ -15,7 +15,15 @@ feature_flags: []
 Get productive in under 5 minutes.
 
 !!! tip "TL;DR – Fast Path"
-    1. Drag the install button into Blender.
+    <div class="truevault-install-action" data-install-url="https://antnxpyjvpvklwhdwhmq.supabase.co/true_vault.zip?repository=%2Ffunctions%2Fv1%2Fget-repo&blender_version_min=4.5.0" data-platform="" download="truevault-addon-latest.zip">
+        <div class="truevault-drag-group">
+            <a class="md-button md-button--primary truevault-drag-button" draggable="true" ondragstart="handleDragStart(event)">
+                :material-download: Drag & Drop into Blender
+            </a>
+        </div>
+    </div>
+    
+    1. Drag the above button into Blender.
     2. Install in `Edit > Preferences > Get Extensions`.
     3. Open the panel (<kbd>N</kbd> key) → `TrueVAULT` tab.  
     4. Sign in / create account.  
@@ -46,7 +54,7 @@ Get productive in under 5 minutes.
     ---
 
     Authenticate / verify email / MFA.  
-    [:octicons-arrow-right-24: Auth](#3-sign-in--create-account)
+    [:octicons-arrow-right-24: Auth](#3-sign-in-create-account)
 
 -   :material-database-search:{ .lg .middle } __Browse & Details__
 

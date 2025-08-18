@@ -14,17 +14,50 @@ feature_flags: []
 
 TrueVAULT uses locally cached data when cached or network is unavailable.
 
+## At a Glance
+<div class="grid cards" markdown>
+
+- :material-wifi-off:{ .lg .middle } __Auto Offline__  
+  Detects connectivity loss.  
+  [:octicons-arrow-right-24: Mode](#automatic-offline-mode)
+
+- :material-database:{ .lg .middle } __Cached Browse__  
+  Use stored product list.  
+  [:octicons-arrow-right-24: Works](#what-works-offline)
+
+- :material-download-off:{ .lg .middle } __Limitations__  
+  Cannot fetch new data.  
+  [:octicons-arrow-right-24: Limits](#what-does-not-work)
+
+- :material-refresh:{ .lg .middle } __Force Refresh__  
+  Update after reconnect.  
+  [:octicons-arrow-right-24: Refresh](#forcing-a-refresh)
+
+- :material-folder:{ .lg .middle } __Library Path__  
+  Local asset storage.  
+  [:octicons-arrow-right-24: Path](#library-path)
+
+- :material-import:{ .lg .middle } __Import Cached__  
+  Use previously downloaded.  
+  [:octicons-arrow-right-24: Import](import-assets.md)
+
+</div>
+
+## Prerequisites
+:octicons-check-circle-fill-16:{ .toggle_green } At least one prior successful sync for cached content.  
+:octicons-check-circle-fill-16:{ .toggle_green } Sufficient disk space for asset variants.
+
 ## Automatic Offline Mode
 - If internet check fails or you are signed out while filtering `Owned`, queries switch to offline.
 
 ## What Works Offline
-- Browsing cached product list.
-- Importing already downloaded assets.
-
-## What Does Not Work
-- Purchasing.
-- Downloading new assets or variants.
-- Refreshing remote metadata.
+| Feature | Offline | Online |
+|---|:---:|:---:|
+| Browsing cached product list | ✅ | ✅ |
+| Importing already downloaded assets | ✅ | ✅ |
+| Purchasing | ❌ | ✅ |
+| Downloading new assets or variants | ❌ | ✅ |
+| Refreshing remote metadata | ❌ | ✅ |
 
 ## Forcing a Refresh
 1. When back online click `Reload`.
@@ -33,6 +66,34 @@ TrueVAULT uses locally cached data when cached or network is unavailable.
 ## Library Path
 - Assets stored under your configured library directory.
 
-## See Also
-- [Import Assets](import-assets.md)
-- [Browse Assets](browse-assets.md)
+## Troubleshooting {: #troubleshooting }
+??? question "Assets missing offline?"
+    * They were never imported (no local copy).  
+    * Use smaller quality next time to pre-cache.  
+    * Verify library path points to previous downloads.
+
+??? question "Still offline after reconnect?"
+    * Click **Reload** to force metadata sync.  
+    * Re-authenticate (token may have expired).  
+    * Check firewall / proxy settings.
+
+??? question "Import failing offline?"
+    * Selected variant not cached—choose a previously downloaded quality.  
+    * Confirm file permissions in library folder.
+
+## Next Steps
+<div class="grid cards" markdown>
+
+- :material-import: __Import Assets__  
+  Learn download & placement.  
+  [:octicons-arrow-right-24: Import](import-assets.md)
+
+- :material-database-search: __Browse Assets__  
+  Filtering & categories.  
+  [:octicons-arrow-right-24: Browse](browse-assets.md)
+
+- :material-layers-triple: __Variants & Updates__  
+  Manage versions & qualities.  
+  [:octicons-arrow-right-24: Variants](manage-variants-updates.md)
+
+</div>

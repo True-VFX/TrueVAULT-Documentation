@@ -64,10 +64,8 @@ Importing an asset downloads any missing files (first time) then links or create
     Already downloaded assets are validated via checksum; re-import is near instantly unless you switched version/quality.
 
 ## Requirements
-:octicons-check-circle-fill-16:{ .toggle_green } Asset owned.
-
-:octicons-check-circle-fill-16:{ .toggle_green } Signed in for first download or if not cached.
-
+:octicons-check-circle-fill-16:{ .toggle_green } Asset owned.  
+:octicons-check-circle-fill-16:{ .toggle_green } Signed in for first download or if not cached.  
 :octicons-check-circle-fill-16:{ .toggle_green } Internet if asset not installed locally.
 
 ## Choose Version & Quality (optional) {: #choose-version-quality }
@@ -103,7 +101,7 @@ The common import flows are grouped below — pick the tab for the asset type yo
 
 === "Texture Assets"
     <figure>
-        <video width="50%" controls autoplay loop playsinline aria-label="Material asset import demonstration" title="Material asset import: download and place">
+        <video controls autoplay loop playsinline aria-label="Material asset import demonstration" title="Material asset import: download and place">
             <source src="/truevault/assets/videos/import_assets_material_example.mp4" type="video/mp4">
             Your browser does not support the video element.
         </video>
