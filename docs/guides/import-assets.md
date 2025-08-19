@@ -87,7 +87,7 @@ The common import flows are grouped below — pick the tab for the asset type yo
 === "Object Assets"
     <figure>
         <video controls autoplay loop playsinline aria-label="Object asset import demonstration" title="Object asset import: download and place">
-            <source src="/truevault/assets/videos/asset_obj_download_and_place.mp4" type="video/mp4">
+            <source src="../../assets/videos/asset_obj_download_and_place.mp4" type="video/mp4">
             Your browser does not support the video element.
         </video>
         <figcaption>Object asset import — download and place.</figcaption>
@@ -102,7 +102,7 @@ The common import flows are grouped below — pick the tab for the asset type yo
 === "Texture Assets"
     <figure>
         <video controls autoplay loop playsinline aria-label="Material asset import demonstration" title="Material asset import: download and place">
-            <source src="/truevault/assets/videos/import_assets_material_example.mp4" type="video/mp4">
+            <source src="../../assets/videos/import_assets_material_example.mp4" type="video/mp4">
             Your browser does not support the video element.
         </video>
         <figcaption>Material asset import — download and assign.</figcaption>
@@ -119,7 +119,7 @@ The common import flows are grouped below — pick the tab for the asset type yo
 === "Heightmap Assets"
     <figure>
         <video controls autoplay loop playsinline aria-label="Heightmap asset import demonstration" title="Heightmap asset import: download and place">
-            <source src="/truevault/assets/videos/import_assets_heightmaps_example.mp4" type="video/mp4">
+            <source src="../../assets/videos/import_assets_heightmaps_example.mp4" type="video/mp4">
             Your browser does not support the video element.
         </video>
         <figcaption>Heightmap asset — imported plane with displacement setup.</figcaption>
