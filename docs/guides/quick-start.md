@@ -26,7 +26,7 @@ Get productive in under 5 minutes.
     1. Drag the above button into Blender.
     2. Install in `Edit > Preferences > Get Extensions`.
     3. Open the panel (<kbd>N</kbd> key) → `TrueVAULT` tab.  
-    4. Sign in / create account.  
+    4. Sign in / create account.
     5. Search, purchase (if needed), Import.  
     6. Done – asset appears in your scene / materials list.
 
@@ -85,7 +85,7 @@ Choose a method below.
 
 === "Drag & Drop (Recommended)"
 
-       <div class="truevault-install-action" data-install-url="https://antnxpyjvpvklwhdwhmq.supabase.co/true_vault.zip?repository=%2Ffunctions%2Fv1%2Fget-repo&blender_version_min=4.5.0" data-platform="" download="truevault-addon-latest.zip">
+       <div class="truevault-install-action" data-install-url="https://vault.true-vfx.xyz/true_vault.zip?repository=%2Ffunctions%2Fv1%2Fget-repo&blender_version_min=4.5.0" data-platform="" download="truevault-addon-latest.zip">
            <div class="truevault-drag-group">
                <a class="md-button md-button--primary truevault-drag-button" draggable="true" ondragstart="handleDragStart(event)">
                    :material-download: Drag & Drop into Blender
@@ -137,9 +137,8 @@ You will see Sign In prompts if not authenticated.
 
 1. Click `Sign In`.
 2. Enter email and password.
-3. Complete email verification (check inbox) if prompted.
-4. If Multi-Factor Auth required, follow on-screen steps (Add Phone, Verify Code).
-5. Set Name and Username when asked.
+3. Complete email verification if prompted.
+4. Set Name and Username in the Account Settings.
 
 
 ## 4. Browse
