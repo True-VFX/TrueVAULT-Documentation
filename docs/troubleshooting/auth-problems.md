@@ -5,7 +5,7 @@ tags: [troubleshooting, auth]
 keywords: [auth, sign in]
 related: [common-issues, purchase-problems]
 last_updated: 2025-08-12
-blender_version_target: 4.0+
+blender_version_target: 4.5+
 feature_flags: []
 ---
 

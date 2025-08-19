@@ -6,7 +6,7 @@ keywords: [install, sign in, first asset]
 related: [../index.md, browse-assets, buy-products, import-assets]
 icon: material/rocket-launch
 last_updated: 2025-08-12
-blender_version_target: 4.0+
+blender_version_target: 4.5+
 feature_flags: []
 ---
 

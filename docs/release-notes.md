@@ -5,7 +5,7 @@ tags: [release]
 keywords: [release, changelog]
 related: [index]
 last_updated: 2025-08-12
-blender_version_target: 4.0+
+blender_version_target: 4.5+
 feature_flags: []
 ---
 
