@@ -139,6 +139,7 @@ plugins:
   - macros
   - tags
   - mike
+  - social
 
 extra_css:
   - stylesheets/fonts.css
