@@ -154,6 +154,8 @@ code {
 .tv-install__meta a { color:#fff; text-decoration:underline; }
 .tv-install__hint { margin:.6rem 0 0; font-size:.7rem; opacity:.85; font-weight:500; }
 
+#tv-intro-title.tv-intro__title { font-size: 3rem; line-height: 1; margin-bottom: 0.5em; color: var(--md-default-fg-color) }
+
 .truevault-drag-button.tv-install__drag { border-color: #ffffff60; border-width: 0.1px; }
 
 /* Illustration (large screens only) */
@@ -167,7 +169,7 @@ code {
 /* Intro (branding moved outside hero) */
 .tv-intro { margin:0 0 1.3rem; padding:0 0 0; }
 /* .tv-intro__title { font-size:clamp(2.4rem,4.4vw,3.15rem); line-height:1.05; margin:0 0 .85rem; } */
-.tv-intro__tagline { font-size:1.15rem; max-width:760px; margin:0 0 1.4rem; opacity:.92; }
+.tv-intro__tagline { font-size:0.8rem; max-width:760px; margin:0 0 1.4rem; opacity:.92; }
 .tv-intro__cta { display:flex; gap:.85rem; flex-wrap:wrap; }
 .tv-intro__cta .md-button { font-weight:600; display:inline-flex; align-items:center; gap:6px; }
 .tv-intro__cta .tv-cta-secondary { border:2px solid var(--md-default-fg-color--lighter); background:transparent; }
