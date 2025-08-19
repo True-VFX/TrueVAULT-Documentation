@@ -97,19 +97,19 @@ Choose a method below.
        2. Accept the install prompt if shown.  
        3. (Optional) Set a custom Library Path: `Edit > Preferences > Add-ons > TrueVAULT`.
 
-=== "Manual (Zip File)"
-
-       1. Click the link to download: [Download latest add-on ZIP](https://github.com/True-VFX/true_vault/releases/tag/v1.0.0){ .md-button }  
-       2. Blender: `Edit > Preferences > Add-ons > Install...`  
-       3. Select the downloaded `true_vault.zip`.  
-       4. Enable the checkbox.  
-       5. (Optional) Adjust Library Path.
-
 === "Updating"
 
        * Re‑download the ZIP, re-install (Blender will overwrite).  
        * Or remove then re-add if issues occur.  
        * Existing local cached assets remain unless you clear them.
+
+<!-- === "Manual (Zip File)"
+
+       1. Click the link to download: [Download latest add-on ZIP](https://github.com/True-VFX/true_vault/releases/latest){ .md-button }  
+       2. Blender: `Edit > Preferences > Add-ons > Install...`  
+       3. Select the downloaded `true_vault.zip`.  
+       4. Enable the checkbox.  
+       5. (Optional) Adjust Library Path. -->
 
 <script>
 function handleDragStart(event) {
