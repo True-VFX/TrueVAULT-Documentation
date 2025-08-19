@@ -99,8 +99,10 @@ Choose a method below.
 
 === "Updating"
 
-       * Re‑download the ZIP, re-install (Blender will overwrite).  
-       * Or remove then re-add if issues occur.  
+       * Preferred: `Edit > Preferences > Get Extensions` → Installed tab → if an update badge appears on **TrueVAULT**, click :material-refresh: Update (or enable the global Auto-Update toggle so future versions install automatically).  
+       * If Auto-Update is enabled you just need to restart Blender when prompted (or the add-on hot-reloads).  
+       * Manual fallback: re-drag-and-drop the extension and install again (Blender will overwrite).  
+       * If something is corrupted: remove (trash icon) then Add / drag the ZIP again.  
        * Existing local cached assets remain unless you clear them.
 
 <!-- === "Manual (Zip File)"
