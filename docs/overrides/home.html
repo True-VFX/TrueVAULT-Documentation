@@ -2,60 +2,73 @@
 
 {% block content %}
 <div class="md-typeset">
-    <!-- Hero Section -->
-    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 4rem 2rem; text-align: center; margin: 0 0 3rem 0; border-radius: 8px; position: relative; z-index: 1;">
-        <h1 style="color: white; font-size: 3rem; margin-bottom: 1rem; font-family: 'Ubuntu', sans-serif;">
-            {{ config.site_name }}
-        </h1>
-        <p style="font-size: 1.25rem; margin-bottom: 2rem; opacity: 0.9;">
-            {{ config.site_description }}
-        </p>
-        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-            <a href="{{ 'guides/quick-start/' | url }}" class="md-button md-button--primary" style="background: white; color: #667eea; font-weight: 500; text-decoration: none; padding: 12px 24px; border-radius: 4px; display: inline-flex; align-items: center; gap: 8px;">
-                🚀 Get Started
-            </a>
-            <a href="{{ 'guides/' | url }}" class="md-button" style="border: 2px solid white; color: white; background: transparent; text-decoration: none; padding: 10px 22px; border-radius: 4px; display: inline-flex; align-items: center; gap: 8px;">
-                📖 Browse Guides
-            </a>
-        </div>
-    </div>
+    <!-- Page Intro (Branding + Primary CTAs) -->
+    <header class="tv-intro" aria-labelledby="tv-intro-title">
+        <h1 id="tv-intro-title" class="tv-intro__title">{{ config.site_name }}</h1>
+        <p class="tv-intro__tagline">{{ config.site_description }}</p>
+        <nav class="tv-intro__cta" aria-label="Primary">
+            <a href="{{ 'guides/quick-start/' | url }}" class="md-button md-button--primary tv-cta-primary">🚀 Get Started</a>
+            <a href="{{ 'guides/' | url }}" class="md-button tv-cta-secondary">📖 Browse Guides</a>
+            <a href="{{ 'reference/' | url }}" class="md-button tv-cta-tertiary">⚙️ Reference</a>
+        </nav>
+    </header>
 
-    <!-- Install Callout Full Width -->
-    <div style="border: 2px dashed var(--md-primary-fg-color); padding: 2rem 1.5rem; border-radius: 10px; background: var(--md-default-bg-color--light); margin: -1.5rem 0 3rem 0; position: relative; overflow: hidden;">
-        <div style="display:flex; flex-direction:column; gap:1rem; align-items:center; text-align:center; max-width:900px; margin:0 auto;">
-            <h2 style="margin:0; display:flex; align-items:center; gap:.5rem; font-size:1.9rem;">
-                <span style="font-size:2.2rem;">🧩</span> Install the TrueVAULT Add‑on
-            </h2>
-            <p style="margin:0; font-size:1.05rem; opacity:.9;">Drag & drop the button below into an open Blender window (4.5+). Or see the <a href="{{ 'guides/quick-start/' | url }}" style="font-weight:600;">Quick Start</a> guide for detailed steps.</p>
-            <div class="truevault-install-action" data-install-url="https://vault.true-vfx.xyz/true_vault.zip?repository=%2Ffunctions%2Fv1%2Fget-repo&blender_version_min=4.5.0" data-platform="" download="truevault-addon-latest.zip" style="width:100%; display:flex; justify-content:center;">
-                <div class="truevault-drag-group" style="display:flex; justify-content:center;">
-                    <a class="md-button md-button--primary truevault-drag-button" draggable="true" ondragstart="handleDragStart(event)" style="font-size:1.05rem; display:inline-flex; gap:.5rem; align-items:center;">
-                        <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 11h5l-1.5-1.5 1.42-1.42L21.84 12l-3.92 3.92-1.42-1.42L18 13h-5v5l1.5-1.5 1.42 1.42L12 21.84l-3.92-3.92L9.5 16.5 11 18v-5H6l1.5 1.5-1.42 1.42L2.16 12l3.92-3.92L7.5 9.5 6 11h5V6L9.5 7.5 8.08 6.08 12 2.16l3.92 3.92L14.5 7.5 13 6v5Z"></path></svg></span>
-                        Drag & Drop into Blender
+    <!-- Install Hero (Install Only) -->
+    <section class="tv-hero" aria-labelledby="tv-install-title">
+        <div class="tv-hero__inner tv-hero__inner--solo tv-install">
+            <header class="tv-install__header">
+                <span class="tv-install__icon" aria-hidden="true">🧩</span>
+                <h2 id="tv-install-title" class="tv-install__title">Install the Add‑on</h2>
+            </header>
+            <p class="tv-install__desc">Drag the button into an open Blender window ({{ page.meta.blender_version_target or '4.5+' }}). Need help? See the <a href="{{ 'guides/quick-start/' | url }}">Quick Start</a> guide.</p>
+            <div class="truevault-install-action" data-install-url="https://vault.true-vfx.xyz/true_vault.zip?repository=%2Ffunctions%2Fv1%2Fget-repo&blender_version_min=4.5.0">
+                <div class="tv-install__action-wrap">
+                    <a class="md-button md-button--primary truevault-drag-button tv-install__drag" draggable="true" ondragstart="handleDragStart(event)" aria-describedby="tv-install-meta" aria-label="Drag to Blender to install TrueVAULT" title="Drag to Blender to install TrueVAULT">
+                        <span class="twemoji" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M13 11h5l-1.5-1.5 1.42-1.42L21.84 12l-3.92 3.92-1.42-1.42L18 13h-5v5l1.5-1.5 1.42 1.42L12 21.84l-3.92-3.92L9.5 16.5 11 18v-5H6l1.5 1.5-1.42 1.42L2.16 12l3.92-3.92L7.5 9.5 6 11h5V6L9.5 7.5 8.08 6.08 12 2.16l3.92 3.92L14.5 7.5 13 6v5Z"/></svg></span>
+                        <span class="tv-install__drag-label">Drag & Drop into Blender</span>
                     </a>
+                    <!-- <div class="tv-install__alt">
+                        <a class="tv-install__download" href="https://vault.true-vfx.xyz/true_vault.zip?repository=%2Ffunctions%2Fv1%2Fget-repo&blender_version_min=4.5.0" download>⬇️ Direct Download</a>
+                    </div> -->
                 </div>
             </div>
-            <div style="font-size:.85rem; opacity:.7; display:flex; gap:1rem; flex-wrap:wrap; justify-content:center;">
-                <span>Requires <a href="https://www.blender.org/download/lts/4-5/">Blender {{ page.meta.blender_version_target or '4.5+' }}</a></span>
-                <span>Safe: installs as an extension (can remove anytime)</span>
-                <span>Problems? <a href="{{ 'guides/quick-start/#troubleshooting' | url }}">Troubleshooting</a></span>
-            </div>
+            <ul id="tv-install-meta" class="tv-install__meta">
+                <li>Requires <a href="https://www.blender.org/download/lts/4-5/">Blender {{ page.meta.blender_version_target or '4.5+' }}</a></li>
+                <li><a href="{{ 'guides/quick-start/#troubleshooting' | url }}">Troubleshooting</a></li>
+            </ul>
         </div>
         <script>
-        function handleDragStart(event) {
-            const container = event.target.closest('.truevault-install-action');
-            const installUrl = container.getAttribute('data-install-url');
-            event.dataTransfer.setData('text/uri-list', installUrl);
-            event.dataTransfer.setData('text/plain', installUrl);
-            event.dataTransfer.effectAllowed = 'copy';
-            event.target.classList.add('dragging');
-        }
-        document.addEventListener('DOMContentLoaded', () => {
-            const btn = document.querySelector('.truevault-drag-button');
-            if (btn) btn.addEventListener('dragend', e => e.target.classList.remove('dragging'));
-        });
+            function handleDragStart(event) {
+                const action = event.target.closest('.truevault-install-action');
+                if (!action) return;
+                const installUrl = action.getAttribute('data-install-url');
+                if (!installUrl) return;
+                event.dataTransfer.setData('text/uri-list', installUrl);
+                event.dataTransfer.setData('text/plain', installUrl);
+                event.dataTransfer.effectAllowed = 'copy';
+                event.target.classList.add('dragging');
+            }
+            document.addEventListener('DOMContentLoaded', () => {
+                const dragBtn = document.querySelector('.truevault-drag-button');
+                const action = document.querySelector('.truevault-install-action');
+                if (dragBtn) dragBtn.addEventListener('dragend', e => e.target.classList.remove('dragging'));
+                // Click fallback for mobile / accessibility.
+                if (dragBtn && action) {
+                    const url = action.getAttribute('data-install-url');
+                    if (url) dragBtn.setAttribute('href', url);
+                }
+                // Drag-drop capability detection & advisory message
+                const supportsDrag = ('draggable' in document.createElement('span')) && (typeof DataTransfer !== 'undefined');
+                const touch = matchMedia('(pointer:coarse)').matches;
+                if ((!supportsDrag || touch) && action) {
+                    const note = document.createElement('p');
+                    note.className = 'tv-install__hint';
+                    note.textContent = 'On this device, use the Direct Download instead of drag & drop.';
+                    action.appendChild(note);
+                }
+            });
         </script>
-    </div>
+    </section>
 
     <!-- Feature Cards Grid -->
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
