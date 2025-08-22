@@ -5,7 +5,7 @@ tags: [account, profile]
 keywords: [account, profile, password]
 related: [auth-flow, manage-credits]
 icon: material/account
-last_updated: 2025-08-12
+last_updated: 2025-08-22
 blender_version_target: 4.5+
 feature_flags: []
 ---
@@ -69,10 +69,25 @@ Manage your identity and security.
 1. Menu :material-menu: > Account Settings :material-account:.
 2. Balance and Account  sections display.
 
+## Link SuperHive Account
+Use this if you previously purchased True VFX products on SuperHive and want them available in TrueVAULT.
+
+1. In the Account section find "SuperHive Account:".
+2. If it shows `Linked` :material-check:, you are all set.
+3. If it shows `Link Account`, click it. A browser opens to the TrueVAULT link site.
+4. Sign in with your TrueVAULT credentials (same account you use in the add‑on).
+5. Enter your SuperHive account email and send the link email.
+6. Open the confirmation email on the same device and click the confirmation link.
+7. After success, your purchases are associated to your TrueVAULT account. Assets may take up to 24 hours to appear; if the browser in Blender doesn’t refresh, try Sign Out then Sign In.
+
+Notes
+- The link site is a minimal TrueVAULT page that handles sign‑in, sends a secure email, and confirms at `/link/superhive/confirm`. You must be signed in on that page to complete confirmation.
+- The link button in Blender opens `https://api.true-vfx.xyz/` which hosts this flow.
+
 ## Change Email
 1. In Account section click :material-pencil: next to Email.
 2. Enter new email.
-3. Confirm via email link (if required).
+3. Confirm via clicking link in emails sent to both old and new email.
 
 ## Change Name / Username {: #change-name--username }
 1. Click :material-pencil: next to Name or Username.
@@ -106,6 +121,18 @@ Manage your identity and security.
     * Check Blender Console for errors.  
     * Re-open Account Settings menu.  
     * Ensure add-on is latest version.
+
+??? question "Didn’t get the SuperHive confirmation email?"
+    * Check spam/junk folders.  
+    * Request the email again from the link site (Settings → SuperHive).
+
+??? question "SuperHive link says expired or invalid?"
+    * Confirmation links expire after a short time.  
+    * Start the link again and click the new email promptly.
+
+??? question "It says my SuperHive email is already linked?"
+    * You may have linked to a different TrueVAULT account.  
+    * Contact support to resolve the conflict.
 
 ## Next Steps
 <div class="grid cards" markdown>
