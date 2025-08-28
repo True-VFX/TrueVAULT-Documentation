@@ -23,11 +23,11 @@ Get productive in under 5 minutes.
         </div>
     </div>
     
-    1. Drag the above button into Blender.
-    2. Install in `Edit > Preferences > Get Extensions`.
-    3. Open the panel (<kbd>N</kbd> key) → `TrueVAULT` tab.  
-    4. Sign in / create account.
-    5. Search, purchase (if needed), Import.  
+    1. Drag the above button into Blender and run through the prompts.
+    2. Enable TrueVAULT in `Edit > Preferences > Get Extensions` or `Edit > Preferences > Add-ons`.
+    3. Sign in / Sign Up through the addon Preferences or side panel (<kbd>N</kbd> key → `TrueVAULT` tab).
+    4. Link SuperHive Purchases :octicons-arrow-right-24: [https://api.true-vfx.xyz/](https://api.true-vfx.xyz/)
+    5. Search, purchase (if needed), Import.
     6. Done – asset appears in your scene / materials list.
 
 ---
@@ -93,16 +93,40 @@ Choose a method below.
            </div>
        </div>
 
-       1. Drag the blue button into the Blender window.  
-       2. Accept the install prompt if shown.  
-       3. (Optional) Set a custom Library Path: `Edit > Preferences > Add-ons > TrueVAULT`.
+       1. Drag the blue button above into the Blender window.
+       2. Accept the install prompt.
+          1. We recommend enabling "Check for Updates on Startup", but it is not required.
+          2. You can also tell Blender where to put the addon using the "Custom Directory" toggle and path input field.
+          3. We do not require an access token for this repository.
+       4. Enable TrueVAULT in either the `Edit > Preferences > Get Extensions` or `Edit > Preferences > Add-ons`.
+       5. Sign in / Sign Up through the addon preferences or the side panel (<kbd>N</kbd> key) → `TrueVAULT` tab.
+       6. Link SuperHive Purchases :octicons-arrow-right-24: [https://api.true-vfx.xyz/](https://api.true-vfx.xyz/)
+          1. This allows access to your purchased assets made through SuperHive.
+          2. Only assets are available for linking at this time. Addon purchases will come in the future.
+       7. Search, purchase (if needed), Import.
+       8. Done – asset appears in your scene / materials list.
+
+=== "Manual"
+
+     1. Open Preferences (CTRL + ,)
+     2. Go to the `Get Extensions` tab.
+     3. Open the `Repositories` dropdown in the top left.
+     4. Click the + button then "Add Remote Repository".
+     5. Enter the repository URL: `https://vault.true-vfx.xyz/functions/v1/get-repo`.
+        1. We recommend enabling "Check for Updates on Startup", but it is not required.
+        2. You can also tell Blender where to put the addon using the "Custom Directory" toggle and path input field.
+        3. We do not require an access token for this repository.
+     6. Search for TrueVAULT if necessary and enable
+     7. Sign in / Sign Up through the addon preferences or the side panel (<kbd>N</kbd> key) → `TrueVAULT` tab.
+     8. Link SuperHive Purchases :octicons-arrow-right-24: [https://api.true-vfx.xyz/](https://api.true-vfx.xyz/)
+     9. Search, purchase (if needed), Import.
+     10.  Done – asset appears in your scene / materials list.
 
 === "Updating"
 
        * Preferred: `Edit > Preferences > Get Extensions` → Installed tab → if an update badge appears on **TrueVAULT**, click :material-refresh: Update (or enable the global Auto-Update toggle so future versions install automatically).  
        * If Auto-Update is enabled you just need to restart Blender when prompted (or the add-on hot-reloads).  
-       * Manual fallback: re-drag-and-drop the extension and install again (Blender will overwrite).  
-       * If something is corrupted: remove (trash icon) then Add / drag the ZIP again.  
+       * Manual fallback: re-drag-and-drop the extension and install again (Blender will overwrite).
        * Existing local cached assets remain unless you clear them.
 
 <!-- === "Manual (Zip File)"
