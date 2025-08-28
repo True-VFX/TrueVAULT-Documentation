@@ -108,7 +108,7 @@ Choose a method below.
 
 === "Manual"
 
-     1. Open Preferences (CTRL + ,)
+     1. Open Preferences (<kbd>CTRL</kbd> + <kbd>,</kbd>)
      2. Go to the `Get Extensions` tab.
      3. Open the `Repositories` dropdown in the top left.
      4. Click the + button then "Add Remote Repository".
