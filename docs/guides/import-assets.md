@@ -101,9 +101,25 @@ The common import flows are grouped below — pick the tab for the asset type yo
 
     #### Placement Controls
     - LMB: Place at the previewed location.
-    - Shift + LMB: Multi-place. Keep clicking to place more; press <kbd>Esc</kbd> or <kbd>Right Mouse</kbd> to finish.
-    - Ctrl + LMB over a mesh: Scatter. Adds a FASTscatter Geometry Nodes modifier to the hovered mesh that instances the imported object. Ctrl overrides Shift.
     - While downloading: Click to lock placement. The asset will place automatically once the download completes.
+
+    Extended actions use modifier keys:
+
+    !!! note "Multi-place — Shift + LMB"
+        <video controls autoplay loop muted playsinline aria-label="Multi-place placement control demo" title="Multi-place (Shift + LMB)">
+            <source src="../../assets/videos/Multi_place.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+
+        Keep clicking to place additional copies. Press <kbd>Esc</kbd> or <kbd>Right Mouse</kbd> to finish multi-placement.
+
+    !!! note "Scatter — Ctrl + LMB over a mesh"
+        <video controls autoplay loop muted playsinline aria-label="Scatter placement control demo" title="Scatter (Ctrl + LMB)">
+            <source src="../../assets/videos/Quick_Scatter.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+
+        Adds a FASTscatter Geometry Nodes modifier to the hovered mesh that instances the imported object. <kbd>Ctrl</kbd> overrides <kbd>Shift</kbd> if both are held.
 
 === "Texture Assets"
     <figure>
