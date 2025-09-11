@@ -5,7 +5,7 @@ tags: [import, assets]
 keywords: [import, placement, texture, heightmap]
 related: [manage-variants-updates, view-download-history]
 icon: material/download
-last_updated: 2025-08-14
+last_updated: 2025-09-11
 blender_version_target: 4.5+
 feature_flags: []
 ---
@@ -51,9 +51,9 @@ Importing an asset downloads any missing files (first time) then links or create
 === "Comparison"
     | Type | Trigger | Creates / Updates | Placement Behavior | Notes |
     |------|---------|-------------------|--------------------|-------|
-    | Object | Import button | Links objects / collections | Into active collection and places at cursor after click | Downloads missing data first |
-    | Material | Import button | New material or updates existing node group | Assigns to currently selected objects | Missing maps muted |
-    | Heightmap | Import button | Plane + displacement node setup | Places plane at origin | High-res meshes can be heavy |
+    | Object | Import button | Links objects / collections | Preview + click to place; Shift=multi-place; Ctrl=scatter | Downloads missing data first |
+    | Material | Import button | New material or updates existing node group | Assigns to hovered object or selected objects | Missing maps muted |
+    | Heightmap | Import button | Plane + displacement node setup | Click to place plane (or 3D cursor) | High-res meshes can be heavy |
 
 === "When to use which"
     - Use **Object** for geometry you want to place multiple times.
@@ -97,7 +97,13 @@ The common import flows are grouped below — pick the tab for the asset type yo
     1. Click `Import` on the owned asset card.
     2. Sign in if prompted or allow the add-on to fetch identifiers.
     3. If the asset isn't cached it downloads while you choose placement.
-    4. The objects link into the active collection.
+    4. Move the mouse to preview placement, then click to place. Objects link into the active collection.
+
+    #### Placement Controls
+    - LMB: Place at the previewed location.
+    - Shift + LMB: Multi-place. Keep clicking to place more; press <kbd>Esc</kbd> or <kbd>Right Mouse</kbd> to finish.
+    - Ctrl + LMB over a mesh: Scatter. Adds a FASTscatter Geometry Nodes modifier to the hovered mesh that instances the imported object. Ctrl overrides Shift.
+    - While downloading: Click to lock placement. The asset will place automatically once the download completes.
 
 === "Texture Assets"
     <figure>
@@ -110,7 +116,7 @@ The common import flows are grouped below — pick the tab for the asset type yo
 
     1. Select the target objects in Blender.
     2. Click `Import` on the material asset.
-    3. A material is created (or updated) and assigned to the selected objects.
+    3. Hover a mesh and click to apply directly to that object; otherwise the material is assigned to the currently selected objects.
     4. Texture nodes are filled where files exist; missing maps are muted.
 
     !!! tip "Material slot behavior"
@@ -126,7 +132,7 @@ The common import flows are grouped below — pick the tab for the asset type yo
     </figure>
 
     1. Click `Import`.
-    2. After the download completes (if needed) a plane with a displacement setup is created for easy editing.
+    2. Move the mouse to choose placement, then click to place the terrain. A plane with a displacement setup is created for easy editing.
 
 ---
 
