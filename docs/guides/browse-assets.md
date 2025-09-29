@@ -20,7 +20,7 @@ Find assets fast using search, filters, categories, sorting, and pagination.
 	Type text to live‑filter titles.
 
 - :material-filter-menu:{ .lg .middle } __Filters__  
-	Refine by price, type, subtype, ownership.
+	Refine by price, type, subtype (Object, Texture, Heightmap, VDB), ownership.
 
 - :material-shape-outline:{ .lg .middle } __Categories__  
 	Drill hierarchical taxonomy; combine with filters.
@@ -44,6 +44,7 @@ Find assets fast using search, filters, categories, sorting, and pagination.
 | Search field | Filters asset titles as you type (case‑insensitive). |
 | Sort button (A/Z icon) | Cycles through ordering presets. |
 | Filters (:material-filter:) | Opens advanced filter popover. |
+| Quick type toggles | One-click product/asset type icons (incl. VDB). |
 | Categories (:material-triangle-down:) | Opens hierarchical category browser. |
 | Tabs (All / Owned) | Toggle global ownership scope. |
 | Pagination bar | Navigate pages of results. |
@@ -73,7 +74,7 @@ Find assets fast using search, filters, categories, sorting, and pagination.
     1. Click the funnel icon :material-filter:.
     2. Adjust **Price Range** sliders to cap min/max.
     3. Choose **Product Type**: _All · Asset · Asset Pack_.
-    4. (If Asset) pick **Asset Subtype** (Object · Texture · Heightmap).
+    4. (If Asset) pick **Asset Subtype**  (Object · Texture · Heightmap · VDB).
     5. Toggle **Owned** to restrict to purchased assets.
     6. Close the popover; list refreshes automatically.
 

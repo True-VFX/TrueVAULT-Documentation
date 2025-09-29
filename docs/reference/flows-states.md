@@ -54,10 +54,15 @@ graph TD
 |-------|--------|--------|
 | Prepare | Click Import | Modal begins |
 | Identify | Fetch version/quality if missing | IDs resolved |
-| Download | Download asset if absent | Local zip ready |
+| Download | Download asset if absent | Local zip ready; progress visible on card |
+| Unpack | Extract archive contents | Local files prepared; progress visible on card |
 | Place | (Objects) Click viewport | Location set |
 | Integrate | Unpack & link data | Scene updated |
 | Finish | Cleanup timers | Ready for re-import |
+
+### Background Downloads
+- Background downloads start from product details or Preferences > Advanced (Download All Owned Assets).
+- Progress for both Downloading and Unpacking appears on the product card and Preferences > Advanced.
 
 ## See Also
 - [Operators](operators.md)

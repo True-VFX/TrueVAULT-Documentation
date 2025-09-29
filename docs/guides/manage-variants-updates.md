@@ -63,6 +63,9 @@ Control which variant of an asset you import.
 ## Persisted Choice
 - Your selection saves locally and applies to next Import.
 
+!!! tip "Pre-cache variants in bulk"
+    To pre-download owned assets for offline use, use Preferences > Advanced > Download All Owned Assets. You can optionally download all quality levels for each asset.
+
 ## Troubleshooting {: #troubleshooting }
 ??? question "New version not appearing?"
     * Click **Check for Updates** again.  

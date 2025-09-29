@@ -48,12 +48,18 @@ Each table row lists visible label (if any). Internal identifier appears in smal
 | Label | Internal | Where to Find | What It Does | Requirements | Side Effects | Related |
 |-------|----------|---------------|--------------|--------------|--------------|---------|
 | Import | `true_vault.asset_store_import_asset` | Owned asset card/details | Downloads (if needed) and imports | Owned; online if not cached | Objects/materials/nodes added | Import Assets |
-| Cancel Import | `true_vault.asset_store_cancel_import` | During download bar | Cancels active download | Active download | Download aborted | Import Assets |
+| Cancel Import | `true_vault.asset_store_cancel_import` | During progress bar | Cancels active download/unpack | Active transfer | Transfer aborted | Import Assets |
 | Check for Updates | `true_vault.asset_store_asset_update_check` | Variant dialog | Checks remote version updates | Online | Possibly updates version list | Manage Variants & Updates |
 | Reload | `true_vault.asset_store_reload` | Browser header | Reloads cache & refreshes queries | None | Data refreshed | Offline & Caching |
 | Fetch Page | `true_vault.asset_store_fetch_page` | Triggered internally | Loads product page data | Query context | Updates list | Browse Assets |
 | Init Store | `true_vault.asset_store_init` | Startup (Assumption) | Initializes managers | None | Preloads cache | Offline & Caching |
 | Add State | `true_vault.asset_store_add_state` | Internal | Pushes UI state | None | State stack grows | Navigation |
+
+### Background & Bulk Downloads
+| Label | Internal | Where to Find | What It Does | Requirements | Side Effects | Related |
+|-------|----------|---------------|--------------|--------------|--------------|---------|
+| Background Download | `true_vault.asset_store_background_download_asset` | Product details (owned) | Starts background download without entering placement | Owned; online | Shows Downloading/Unpacking progress on card and in Preferences | Import Assets |
+| Download All Owned Assets | `true_vault.asset_store_download_all_owned_assets` | Preferences > Advanced | Kicks off background downloads for all owned assets based on auto-download settings | Signed in; online | Optional: download all quality levels | Offline & Caching |
 
 ## Account & Auth
 | Label | Internal | Where to Find | What It Does | Requirements | Side Effects | Related |

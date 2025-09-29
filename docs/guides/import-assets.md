@@ -37,6 +37,13 @@ Importing an asset downloads any missing files (first time) then links or create
     Creates displaced plane with node network ready for sculpting or shading.  
     [:octicons-arrow-right-24: Steps](#__tabbed_2_3)
 
+-   :material-clouds:{ .lg .middle } __VDB__
+
+    ---
+
+    Imports OpenVDB volumes and configures them for rendering.  
+    [:octicons-arrow-right-24: Steps](#__tabbed_2_4)
+
 -   :material-help-circle:{ .lg .middle } __Troubleshoot__
 
     ---
@@ -54,11 +61,13 @@ Importing an asset downloads any missing files (first time) then links or create
     | Object | Import button | Links objects / collections | Preview + click to place; Shift=multi-place; Ctrl=scatter | Downloads missing data first |
     | Material | Import button | New material or updates existing node group | Assigns to hovered object or selected objects | Missing maps muted |
     | Heightmap | Import button | Plane + displacement node setup | Click to place plane (or 3D cursor) | High-res meshes can be heavy |
+    | VDB | Import button | Volume object(s) configured for rendering | Click to place volume origin | Large caches can take time to unpack |
 
 === "When to use which"
     - Use **Object** for geometry you want to place multiple times.
     - Use **Material** to standardize look across selected objects.
-    - Use **Heightmap** for terrain prototyping or displacement-based workflows.
+    - Use **Height Map** for terrain prototyping or displacement-based workflows.
+    - Use **VDB** for volumetric effects like smoke, clouds, explosions, or fog.
 
 !!! info "Caching & re-use"
     Already downloaded assets are validated via checksum; re-import is near instantly unless you switched version/quality.
@@ -150,22 +159,37 @@ The common import flows are grouped below — pick the tab for the asset type yo
     1. Click `Import`.
     2. Move the mouse to choose placement, then click to place the terrain. A plane with a displacement setup is created for easy editing.
 
+=== "VDB Assets"
+
+    1. Click `Import`.
+    2. If not cached, the VDB archive downloads, then unpacks.
+    3. Click in the viewport to place the volume origin. Adjust domain/object settings as needed.
+    
+    !!! info "VDB notes"
+        - VDB file sizes vary widely; initial unpack may take longer than textures.
+        - Thumbnails and icons identify VDB assets in the browser and details pages.
+        - If no VDB objects are found in the downloaded file, an error is reported.
+
 ---
 
 ## Progress & Cancellation {: #progress }
 
 !!! note "Download UI"
-    A compact progress bar appears on the asset card while remote data transfers. If the bar vanishes too quickly it likely hit the local cache.
+    The asset card now shows two distinct stages when needed: Downloading and Unpacking. If the bars complete quickly, the asset was already cached.
 
-- Progress bar shows during download.
+- Progress bars show for Download and Unpack stages.
 - Cancel button (X icon) or <kbd>ESC</kbd> stops download; import ends.
 - On cancellation, partial files are cleaned up; cache remains consistent.
+
+!!! tip "Background download"
+    Prefer to pre-cache heavy assets without placing them? Use **Background Download** from the product details page or hold <kbd>Alt</kbd> while clicking `Import`. You can monitor progress in Preferences > Advanced.
 
 ## After Import {: #after-import }
 - You can re-import with different version/quality by changing settings then repeating.
 - Re-importing an Object duplicates linked object instances; delete unwanted copies manually.
 - Re-importing a Material updates the node tree (if structure unchanged) else creates a new suffixed material.
-- Heightmap re-import spawns a fresh plane; consider using Collections to organize iterations.
+- Height Map re-import spawns a fresh plane; consider using Collections to organize iterations.
+- VDB re-import places a new volume object using the currently selected version/quality.
 
 ## Troubleshooting {: #troubleshooting }
 

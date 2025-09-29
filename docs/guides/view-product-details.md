@@ -31,6 +31,8 @@ Use this page when you need deeper context than the product card offers.
 	Contextual primary action based on ownership.
 - :material-cog: **Settings (Owned)**  
 	Manage Version & Quality after importing rights unlocked.
+- :material-download: **Background Download (Owned)**  
+	Pre-cache assets without placing; view progress in Preferences.
 
 </div>
 
@@ -110,6 +112,9 @@ Use this page when you need deeper context than the product card offers.
          - License badge may show ownership scope (e.g., "Studio").
 
     Use Settings after first import to fine-tune future pulls.
+
+    !!! tip "Background download"
+        Use the **Background Download** action on the details page to download in the background without entering placement mode. The product card shows Downloading and Unpacking progress, and you can also monitor all active transfers from Preferences > Advanced.
 
 === "State Differences"
 

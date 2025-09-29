@@ -14,6 +14,7 @@ feature_flags: []
 | Symptom | Likely Cause | Resolution |
 |---------|--------------|-----------|
 | Cannot sign in | Wrong credentials | Reset password or retry |
+| Password seems correct but fails | Caps Lock enabled | Check the UI warning "Caps Lock is ON" and retype |
 | Verification email not received | Email filtering | Check spam or resend |
 | MFA code invalid | Expired or mistyped | Request new code and re-enter |
 | Owned tab empty after sign-in | Cache not reloaded | Click Reload |

@@ -90,6 +90,9 @@ Mark items as you progress.
     - Ownership badge or tag displays (if configured).  
     - Variants & updates now accessible (see [Manage Variants & Updates](manage-variants-updates.md)).
 
+!!! note "Auto-download on unlock"
+    If enabled in Preferences > Advanced, the add-on automatically starts a background download for newly unlocked assets. You can configure which asset types auto-download and the maximum file size (set 0 for unlimited).
+
 ### Quick Verification
 1. Find the product card again.  
 2. Confirm the **Import** button is visible.  

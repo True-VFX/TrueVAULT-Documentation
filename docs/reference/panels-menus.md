@@ -22,6 +22,7 @@ feature_flags: []
 | Asset Variant Dialog | Gear icon on owned asset | Choose version/quality, check updates | Quality, Version, Check for Updates | `true_vault.asset_store_asset_menu` |
 | Purchase Dialog | Purchase button | Confirm or recharge | Confirm Purchase / Recharge Credits | `true_vault.asset_store_purchase_product` |
 | Import Modal | Import button (owned asset) | Interactive placement / download | Click in viewport, cancel | `true_vault.asset_store_import_asset` |
+| Background Download | Product details (owned) | Pre-download without placement | Shows progress on card and in Preferences > Advanced | `true_vault.asset_store_background_download_asset` |
 
 ## See Also
 - [Operators](operators.md)
