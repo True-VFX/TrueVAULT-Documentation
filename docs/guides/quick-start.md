@@ -195,13 +195,13 @@ You will see Sign In prompts if not authenticated.
 4. Placement:
       - **Objects**: Click in the viewport to place.
       - **Textures**: select objects first to auto-apply material.
-      - **Heightmaps**: a geometry nodes setup is created.
+      - **Height Maps**: a geometry nodes setup is created.
 5. Wait for download progress (press <kbd>ESC</kbd> to Cancel).
 
 ## 8. Verify
 - Imported objects appear in the active collection.
 - Materials appear in the Material list if texture asset.
-- Heightmap object with Geometry Nodes modifier if heightmap asset.
+- Height Map object with Geometry Nodes modifier if height map asset.
 
 ---
 

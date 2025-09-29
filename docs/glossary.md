@@ -13,11 +13,11 @@ feature_flags: []
 
 | Term | Definition |
 |------|------------|
-| Asset | Downloadable content item (object, texture, heightmap). |
+| Asset | Downloadable content item (object, texture, height map). |
 | Asset Pack (Bundle) | Collection of multiple assets sold together. |
 | Credits | Virtual currency used to purchase products. |
 | Download History | Record of previous downloads (version + quality). |
-| Heightmap | Elevation image used to generate terrain geometry. |
+| Height Map | Elevation image used to generate terrain geometry. |
 | Import | Action of bringing asset data into the open Blender file. |
 | License | Terms governing usage of a product. |
 | Quality | Variant representing resolution or data size. |

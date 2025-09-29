@@ -56,7 +56,7 @@ Keep icon weight consistent (Material / Octicons mix allowed but prefer Material
 Collapsible groups: use `???` (add `+` to default-open). Keep titles concise.
 
 ## Content Tabs
-Use for mutually exclusive procedural variants (e.g. Object vs Material vs Heightmap). Avoid tabs for linear steps.
+Use for mutually exclusive procedural variants (e.g. Object vs Material vs Height Map). Avoid tabs for linear steps.
 
 ## Checklists
 Use simple task list markdown for prerequisite verification or multi-step confirmation sequences.

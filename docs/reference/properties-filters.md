@@ -28,14 +28,14 @@ feature_flags: []
 | Search | `search` | Asset Store header | Text filter on title | Free text | Triggers new query |
 | Sort | `sort` | Header (A/Z icon) | Ordering of results | Newest, Oldest, A–Z, Z–A | Resets to page 1 when changed (Assumption) |
 | Tab (All Assets / Owned Assets) | `tab` | Header | Switch data source | browser / library | Reloads active tab state |
-| Quick Type Toggles | `filter_product_type`, `filter_asset_type` | Header | One-click product type and asset subtype filters | All/Asset/Pack; Object/Texture/Heightmap/VDB | Mirrors popover filter state |
+| Quick Type Toggles | `filter_product_type`, `filter_asset_type` | Header | One-click product type and asset subtype filters | All/Asset/Pack; Object/Texture/Height Map/VDB | Mirrors popover filter state |
 
 ## Filters Popover
 | Label | Internal | What It Does | Options | Notes |
 |-------|----------|--------------|---------|-------|
 | Price Range | `filter_price_range` | Restrict by credit price | Min 0–100 (slider) | Adjust max if store extends pricing |
 | Product Type | `filter_product_type` | Filter by high-level type | All, Asset, Asset Pack | Asset Pack = bundle |
-| Type | `filter_asset_type` | Filter asset subtypes | All, Object, Texture, Heightmap, VDB | Future types may appear |
+| Type | `filter_asset_type` | Filter asset subtypes | All, Object, Texture, Height Map, VDB | Future types may appear |
 | Owned | `filter_owned` | Show only owned | Bool | Forces offline if signed out |
 | Bundle ID | `filter_bundle_id` | Limit to one bundle | ID string | Set internally when viewing bundle |
 | Tags | `filter_tags` | Active tag filters (JSON) | Derived | Managed by tag clicks |

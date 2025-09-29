@@ -17,7 +17,7 @@ feature_flags: []
 | Download retries message | Transient network failure | Wait; auto retries up to 3 times |
 | Import canceled warning | You cancelled or pressed Esc | Re-run Import |
 | Missing textures in material | Texture files absent | Check asset files in library path, re-import |
-| Heightmap node group missing | Library .blend not found | Reinstall add-on assets (Assumption) |
+| Height Map node group missing | Library .blend not found | Reinstall add-on assets (Assumption) |
 
 ## See Also
 - [Offline & Caching](../guides/offline-caching.md)

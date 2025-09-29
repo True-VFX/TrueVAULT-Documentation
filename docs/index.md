@@ -19,7 +19,7 @@ TrueVAULT integrates an asset store into Blender so you can browse, buy, and imp
 - Filter by categories, tags, type, price, ownership.
 - View rich product details and image galleries.
 - Purchase with credits and redeem recharge codes.
-- Import assets (Objects, Textures, Heightmaps) directly into the scene.
+- Import assets (Objects, Textures, Height Maps) directly into the scene.
 - Manage versions, qualities, and updates for owned assets.
 - See download history and license info.
 - Handle account profile, MFA, and sign-in flows.

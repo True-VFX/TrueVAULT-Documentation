@@ -40,7 +40,7 @@ feature_flags: []
 - Asset browsing with search, sort, filters, categories, tags.
 - Product details with gallery, tags, license view.
 - Purchase flow with credit balance and recharge.
-- Import for Object, Texture, Heightmap assets.
+- Import for Object, Texture, Height Map assets.
 - Variant dialog (Version & Quality) + update check.
 - Download history and licenses views.
 - Account management, MFA-aware auth flow.

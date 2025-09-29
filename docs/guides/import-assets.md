@@ -30,7 +30,7 @@ Importing an asset downloads any missing files (first time) then links or create
     Builds a material, assigns to selected objects, mutes missing maps gracefully.  
     [:octicons-arrow-right-24: Steps](#__tabbed_2_2)
 
--   :material-terrain:{ .lg .middle } __Heightmap__
+-   :material-terrain:{ .lg .middle } __Height Map__
 
     ---
 
@@ -60,7 +60,7 @@ Importing an asset downloads any missing files (first time) then links or create
     |------|---------|-------------------|--------------------|-------|
     | Object | Import button | Links objects / collections | Preview + click to place; Shift=multi-place; Ctrl=scatter | Downloads missing data first |
     | Material | Import button | New material or updates existing node group | Assigns to hovered object or selected objects | Missing maps muted |
-    | Heightmap | Import button | Plane + displacement node setup | Click to place plane (or 3D cursor) | High-res meshes can be heavy |
+    | Height Map | Import button | Plane + displacement node setup | Click to place plane (or 3D cursor) | High-res meshes can be heavy |
     | VDB | Import button | Volume object(s) configured for rendering | Click to place volume origin | Large caches can take time to unpack |
 
 === "When to use which"
@@ -147,13 +147,13 @@ The common import flows are grouped below — pick the tab for the asset type yo
     !!! tip "Material slot behavior"
           Materials do not overwrite existing ones. They are inserted into new slots at the bottom of the material stack.
 
-=== "Heightmap Assets"
+=== "Height Map Assets"
     <figure>
-        <video controls autoplay loop playsinline aria-label="Heightmap asset import demonstration" title="Heightmap asset import: download and place">
+        <video controls autoplay loop playsinline aria-label="Height Map asset import demonstration" title="Height Map asset import: download and place">
             <source src="../../assets/videos/import_assets_heightmaps_example.mp4" type="video/mp4">
             Your browser does not support the video element.
         </video>
-        <figcaption>Heightmap asset — imported plane with displacement setup.</figcaption>
+        <figcaption>Height Map asset — imported plane with displacement setup.</figcaption>
     </figure>
 
     1. Click `Import`.
