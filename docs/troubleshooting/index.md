@@ -66,4 +66,4 @@ Having issues with TrueVAULT? This section provides solutions to common problems
     2. **Search documentation:** Use the search bar to find specific error messages  
     3. **Contact support:** If issues persist, contact support with your log files
     
-    For feature requests and general questions, visit our [Guides section](../guides/index.md) or [Reference documentation](../reference/index.md).
+    For feature requests and general questions, visit our [Guides section](../guides/index.md).

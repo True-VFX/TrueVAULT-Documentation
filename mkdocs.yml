@@ -39,14 +39,6 @@ nav:
       - Refund a Purchase: guides/refund-purchase.md
       - Use Tags & Categories: guides/tags-categories.md
       - Offline & Caching: guides/offline-caching.md
-  - Reference:
-      - reference/index.md
-      - Panels & Menus: reference/panels-menus.md
-      - Operators: reference/operators.md
-      - Properties & Filters: reference/properties-filters.md
-      - Flows & States: reference/flows-states.md
-      - Task Index: reference/task-index.md
-      - Reference Index: reference/reference-index.md
   - Refund Policy: reference/refund-policy.md
   - Troubleshooting:
       - troubleshooting/index.md
@@ -55,8 +47,6 @@ nav:
       - Purchase Problems: troubleshooting/purchase-problems.md
       - Auth Problems: troubleshooting/auth-problems.md
       - Performance & Cache: troubleshooting/performance-cache.md
-  - Glossary: glossary.md
-  - Release Notes: release-notes.md
   - Change Log:
       - v1.1: change-log/v1.1.md
       - change-log/index.md
@@ -70,7 +60,6 @@ nav:
       - v1.0.2: change-log/v1.0.2.md
       - v1.0.1: change-log/v1.0.1.md
       - v1.0.0: change-log/v1.0.0.md
-  - Tags: tags.md
 
 theme:
   name: material

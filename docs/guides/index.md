@@ -129,4 +129,4 @@ Welcome to the TrueVAULT guides! These step-by-step tutorials will help you mast
 ## Getting Help
 
 !!! tip "Need More Help?"
-    If you can't find what you're looking for in these guides, check out our [troubleshooting section](../troubleshooting/common-issues.md) or browse the [complete reference documentation](../reference/reference-index.md).
+    If you can't find what you're looking for in these guides, check out our [troubleshooting section](../troubleshooting/common-issues.md).
