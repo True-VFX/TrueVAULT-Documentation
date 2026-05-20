@@ -6,7 +6,7 @@ keywords: [credits, balance, recharge, redeem]
 related: [buy-products, refund-purchase]
 icon: material/currency-usd
 last_updated: 2025-08-15
-blender_version_target: 4.5+
+blender_version_target: 5.1+
 feature_flags: []
 ---
 

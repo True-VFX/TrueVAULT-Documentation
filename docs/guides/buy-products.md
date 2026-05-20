@@ -6,7 +6,7 @@ keywords: [buy, purchase, credits]
 related: [manage-credits, import-assets, refund-purchase]
 icon: material/cart
 last_updated: 2025-08-15
-blender_version_target: 4.5+
+blender_version_target: 5.1+
 feature_flags: []
 ---
 

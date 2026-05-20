@@ -6,7 +6,7 @@ keywords: [import, placement, texture, heightmap]
 related: [manage-variants-updates, view-download-history]
 icon: material/download
 last_updated: 2025-09-11
-blender_version_target: 4.5+
+blender_version_target: 5.1+
 feature_flags: []
 ---
 

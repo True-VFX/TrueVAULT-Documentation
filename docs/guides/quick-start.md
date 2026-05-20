@@ -6,7 +6,7 @@ keywords: [install, sign in, first asset]
 related: [../index.md, browse-assets, buy-products, import-assets]
 icon: material/rocket-launch
 last_updated: 2025-08-12
-blender_version_target: 4.5+
+blender_version_target: 5.1+
 feature_flags: []
 ---
 
@@ -15,7 +15,7 @@ feature_flags: []
 Get productive in under 5 minutes.
 
 !!! tip "TL;DR – Fast Path"
-    <div class="truevault-install-action" data-install-url="https://vault.true-vfx.xyz/true_vault.zip?repository=%2Ffunctions%2Fv1%2Fget-repo&blender_version_min=4.5.0" data-platform="" download="truevault-addon-latest.zip">
+    <div class="truevault-install-action" data-install-url="https://vault.true-vfx.xyz/true_vault.zip?repository=%2Ffunctions%2Fv1%2Fget-repo&blender_version_min=5.1.0" data-platform="" download="truevault-addon-latest.zip">
         <div class="truevault-drag-group">
             <a class="md-button md-button--primary truevault-drag-button" draggable="true" ondragstart="handleDragStart(event)">
                 :material-download: Drag & Drop into Blender
@@ -85,7 +85,7 @@ Choose a method below.
 
 === "Drag & Drop (Recommended)"
 
-       <div class="truevault-install-action" data-install-url="https://vault.true-vfx.xyz/true_vault.zip?repository=%2Ffunctions%2Fv1%2Fget-repo&blender_version_min=4.5.0" data-platform="" download="truevault-addon-latest.zip">
+       <div class="truevault-install-action" data-install-url="https://vault.true-vfx.xyz/true_vault.zip?repository=%2Ffunctions%2Fv1%2Fget-repo&blender_version_min=5.1.0" data-platform="" download="truevault-addon-latest.zip">
            <div class="truevault-drag-group">
                <a class="md-button md-button--primary truevault-drag-button" draggable="true" ondragstart="handleDragStart(event)">
                    :material-download: Drag & Drop into Blender

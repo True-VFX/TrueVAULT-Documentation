@@ -6,7 +6,7 @@ keywords: [refund, purchase]
 related: [buy-products, manage-credits, refund-policy]
 icon: material/cash-refund
 last_updated: 2025-08-15
-blender_version_target: 4.5+
+blender_version_target: 5.1+
 feature_flags: []
 ---
 

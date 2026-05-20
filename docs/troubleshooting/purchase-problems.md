@@ -5,7 +5,7 @@ tags: [troubleshooting, purchase]
 keywords: [purchase, error]
 related: [common-issues, manage-credits]
 last_updated: 2025-08-12
-blender_version_target: 4.5+
+blender_version_target: 5.1+
 feature_flags: []
 ---
 

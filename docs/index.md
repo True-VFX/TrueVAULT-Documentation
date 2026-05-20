@@ -6,7 +6,7 @@ tags: [overview, quick start]
 keywords: [TrueVAULT, asset store, blender assets, import]
 related: [guides/quick-start]
 last_updated: 2025-08-12
-blender_version_target: 4.5+
+blender_version_target: 5.1+
 feature_flags: []
 ---
 
@@ -25,14 +25,14 @@ TrueVAULT integrates an asset store into Blender so you can browse, buy, and imp
 - Handle account profile, MFA, and sign-in flows.
 
 ## Quick Start (Summary)
-<div class="truevault-install-action" data-install-url="https://antnxpyjvpvklwhdwhmq.supabase.co/true_vault.zip?repository=%2Ffunctions%2Fv1%2Fget-repo&blender_version_min=4.5.0" data-platform="" download="truevault-addon-latest.zip">
+<div class="truevault-install-action" data-install-url="https://antnxpyjvpvklwhdwhmq.supabase.co/true_vault.zip?repository=%2Ffunctions%2Fv1%2Fget-repo&blender_version_min=5.1.0" data-platform="" download="truevault-addon-latest.zip">
   <div class="truevault-drag-group">
     <button class="truevault-drag-button" draggable="true" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; background: #007bff; color: white; border: none; border-radius: 6px; cursor: move; font-weight: 500; text-decoration: none; margin-bottom: 12px;" ondragstart="handleDragStart(event)">
     <span>Drag and Drop into Blender</span>
     </button>
   </div>
   <!-- <small style="display: block; text-align: center; color: #666; font-size: 14px;">
-    ...or <a href="https://antnxpyjvpvklwhdwhmq.supabase.co/true_vault.zip?repository=%2Ffunctions%2Fv1%2Fget-repo&blender_version_min=4.5.0" download="truevault-addon-latest.zip" style="color: #007bff; text-decoration: underline;">download</a> 
+    ...or <a href="https://antnxpyjvpvklwhdwhmq.supabase.co/true_vault.zip?repository=%2Ffunctions%2Fv1%2Fget-repo&blender_version_min=5.1.0" download="truevault-addon-latest.zip" style="color: #007bff; text-decoration: underline;">download</a> 
     and <a href="https://docs.blender.org/manual/en/dev/editors/preferences/extensions.html#install" target="_blank" style="color: #007bff; text-decoration: underline;">Install from Disk</a>
   </small> -->
 </div>

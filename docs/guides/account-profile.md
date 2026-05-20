@@ -6,7 +6,7 @@ keywords: [account, profile, password]
 related: [auth-flow, manage-credits]
 icon: material/account
 last_updated: 2025-08-22
-blender_version_target: 4.5+
+blender_version_target: 5.1+
 feature_flags: []
 ---
 
