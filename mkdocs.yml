@@ -39,7 +39,6 @@ nav:
       - Refund a Purchase: guides/refund-purchase.md
       - Use Tags & Categories: guides/tags-categories.md
       - Offline & Caching: guides/offline-caching.md
-  - Refund Policy: reference/refund-policy.md
   - Troubleshooting:
       - troubleshooting/index.md
       - Common Issues: troubleshooting/common-issues.md
@@ -60,6 +59,7 @@ nav:
       - v1.0.2: change-log/v1.0.2.md
       - v1.0.1: change-log/v1.0.1.md
       - v1.0.0: change-log/v1.0.0.md
+  - Refund Policy: reference/refund-policy.md
 
 theme:
   name: material
