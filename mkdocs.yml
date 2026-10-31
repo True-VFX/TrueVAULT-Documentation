@@ -47,8 +47,12 @@ nav:
       - Auth Problems: troubleshooting/auth-problems.md
       - Performance & Cache: troubleshooting/performance-cache.md
   - Change Log:
-      - v1.1: change-log/v1.1.md
       - change-log/index.md
+      - v1.4: change-log/v1.4.md
+      - v1.3: change-log/v1.3.md
+      - v1.2: change-log/v1.2.md
+      - v1.1.1: change-log/v1.1.1.md
+      - v1.1: change-log/v1.1.md
       - v1.0.9: change-log/v1.0.9.md
       - v1.0.8: change-log/v1.0.8.md
       - v1.0.7: change-log/v1.0.7.md
